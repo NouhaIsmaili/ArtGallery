@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductComponent } from '../product/product.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ProductComponent,MatGridListModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
