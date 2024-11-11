@@ -1,1 +1,11 @@
-<p>product works!</p>
+<div id="box">
+    <img [src]=tab.photo >
+    <h2>{{tab.name}}</h2>
+    <div id="next">
+        <h3>{{tab.price}} Dt</h3>
+       <div [ngClass]="{'red': like}" (click)="onlike()"   class="material-symbols-outlined">
+            favorite
+            <p>{{tab.nbLikes}}</p> 
+        </div>
+  </div>
+</div>   

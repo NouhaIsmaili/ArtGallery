@@ -3,9 +3,8 @@
 export class ArtTable {
 
     constructor(
-        
-        public name:string,
         public id:string,
+        public name:string,
         public photo:string,
         public height : number ,
         public width : number,

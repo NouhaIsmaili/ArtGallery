@@ -1,0 +1,36 @@
+
+#box {
+    width: 300px; 
+    border: 1px solid #b4b2b2;
+    border-radius: 10px; 
+    padding: 25px;
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+#box img {
+    width: 100%; 
+    height: 250px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+}
+
+#box h3 {
+    margin: 10px ; 
+    font-size: 1.3em; 
+    font-weight: bold; 
+    margin-top: 10px;
+}
+span{
+    display: block;
+}
+#next{
+    display: flex;
+    justify-content: space-around;
+}
+.red{
+    color:red;
+} 
