@@ -1,4 +1,5 @@
     import{ Comment }from "@angular/compiler";
+import { Category } from "./category";
 
 export class ArtTable {
 
@@ -14,7 +15,7 @@ export class ArtTable {
         public disponibility: boolean,
         public dateCreate: Date,
         public comments: Comment[] = [],
-        public category: string,
+        public category: Category,
         public nbLikes :number,
         public description?: string,
         public discount? : number,
