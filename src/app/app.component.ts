@@ -5,7 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolBarComponent, HomeComponent],
+  imports: [RouterOutlet,ToolBarComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

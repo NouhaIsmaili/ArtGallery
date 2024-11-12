@@ -3,9 +3,13 @@
     <h2>{{tab.name}}</h2>
     <div id="next">
         <h3>{{tab.price}} Dt</h3>
-       <div [ngClass]="{'red': like}" (click)="onlike()"   class="material-symbols-outlined">
+       <div [ngClass]="{'red': like}" (click)="onlike(tab)"   class="material-symbols-outlined">
             favorite
             <p>{{tab.nbLikes}}</p> 
-        </div>
+          </div>   
+        <button (click)="openDialog(tab)" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>more_vert</mat-icon>
+        </button>            
+       
   </div>
 </div>   

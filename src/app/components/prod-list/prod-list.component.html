@@ -1,1 +1,7 @@
-<p>prod-list works!</p>
+    <mat-grid-list cols="4" rowHeight="1:1">
+    @for(tab of liste;track $index){
+        <mat-grid-tile>
+        <app-product  [tab]="tab"></app-product> 
+        </mat-grid-tile>
+    }
+    </mat-grid-list>
