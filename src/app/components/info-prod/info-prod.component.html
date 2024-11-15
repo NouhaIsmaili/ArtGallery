@@ -1,9 +1,79 @@
-<h2 mat-dialog-title>Install Angular</h2>
+<h2 mat-dialog-title class="text-center"> {{ data.name }}</h2>
 <mat-dialog-content class="mat-typography">
- 
-  <p>{{data.id}}</p>
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <img [src]="data.photo"  width=300px height=200px>
+          <p><strong class="col-md-8">{{ data.painter }}</strong> <em class="col-md-4">{{ data.dateCreate | date }}</em> </p>
+          @if(!data.disponibility){
+            <!-- produit non disponible -->
+            <div class="alert alert-danger text-center" role="alert">
+              Sold Out
+            </div>
+          }@else if(data.discount>0){
+            <!-- produit avec discount -->
+            <div class="container">
+              <div class="product-price">
+                
+                <span class="text-muted ms-3" style="text-decoration: line-through;">
+                  {{ data.price | currency }}
+                </span>
+                
+                <span class="text-danger ms-3">
+                  {{ (data.price * (1 - data.discount / 100)) | currency }}
+                </span>
+              
+                <span class="badge text-bg-success ms-7">
+                  -{{ data.discount }}%
+                </span>
+              </div>
+            </div>
+          }@else {
+            <span class="text-muted ms-3" >
+              {{ data.price | currency }}
+            </span>
+          }
+
+        </div>
+        <div class="col-md-8">
+          <p><strong>Description:</strong> {{ data.description }}</p>
+          <p><strong>Dimensions:</strong> {{ data.width }}m -{{data.height}}m</p>
+          <div>
+            <strong>comments:</strong>
+            <!-- formilaire commentaire -->
+            <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+              <div>
+                  <input type="text" class=" form-control" placeholder="tap your name" name="author"  formControlName="author">
+              </div>
+              <div>
+                  <input class=" form-control" type="text" placeholder="tap your message" name="message" formControlName="message">
+              </div>
+              <input type="submit"  value="Ajouter" class="btn btn-success" [disabled]="commentForm.invalid">
+            </form> 
+            <!-- affichage des commentaire -->
+            @for(comment of data.comments; track $index){
+              <p>          
+                <mat-icon>person</mat-icon>
+                <strong class="col-md-8">{{comment.author}}</strong>
+                <em class="col-md-4">{{ comment.date | date }}</em> 
+              </p>
+              <p>
+                {{comment.message}}
+              </p>
+            }
+          </div> 
+
+        </div>
+    </div>
+</div>
+
+
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+  <button mat-button class="btn btn-danger" mat-dialog-close>Cancel</button>
+
+  <button mat-button mat-dialog-close class="btn btn-success" (click)="onAddShopCard()">
+    <mat-icon>add_shopping_cart</mat-icon>
+  </button>
 </mat-dialog-actions>

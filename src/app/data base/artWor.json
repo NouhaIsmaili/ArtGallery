@@ -2,20 +2,26 @@
   "artWork": [
     {
       "id": "10",
-      "name": "Les Deux Fridas (1939)",
+      "name": "Les Deux Fridas ",
       "photo": "abstrait/Baroni-Victor/imgB1.jpg",
       "height": 173,
       "width": 173,
       "painter": "Baroni Victor",
-      "price": 10000000,
+      "price": 100,
       "quantity": 1,
       "disponibility": true,
       "dateCreate": "1939-01-01T00:00:00Z",
-      "comments": [],
+      "comments": [
+        {
+          "author": "nouha",
+          "date": "2024-11-14T19:18:56.556Z",
+          "message": "amaizing"
+        }
+      ],
       "category": "Abstrait",
       "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
-      "discount": null,
-      "nbLikes": 3002
+      "discount": 30,
+      "nbLikes": 302
     },
     {
       "id": "11",
@@ -24,15 +30,41 @@
       "height": 30.5,
       "width": 38,
       "painter": "Baroni Victor",
-      "price": null,
+      "price": 450,
       "quantity": 1,
       "disponibility": true,
       "dateCreate": "1932-01-01T00:00:00Z",
-      "comments": [],
+      "comments": [
+        {
+          "author": null,
+          "date": null,
+          "message": null
+        },
+        {
+          "author": "nn",
+          "date": null,
+          "message": null
+        },
+        {
+          "author": "Azza",
+          "date": "2024-11-14T21:07:07.052Z",
+          "message": "trop beau"
+        },
+        {
+          "author": "islem",
+          "date": "2024-11-14T21:07:07.052Z",
+          "message": "trop beau"
+        },
+        {
+          "author": "nouha",
+          "date": "2024-11-14T21:07:07.052Z",
+          "message": "amaizing"
+        }
+      ],
       "category": "Abstrait",
       "description": "In this powerful and intimate painting, Frida Kahlo depicts herself lying naked in Henry Ford Hospital after experiencing a miscarriage. Surrounded by symbols of her loss, including a male fetus and various objects representing her pain, the artwork reflects her emotional turmoil and the physical suffering she endured during her pregnancy.",
       "discount": null,
-      "nbLikes": 4000
+      "nbLikes": 401
     },
     {
       "id": "12",
@@ -41,15 +73,15 @@
       "height": 61.2,
       "width": 47,
       "painter": "Baroni Victor",
-      "price": 8000000,
+      "price": 800,
       "quantity": 1,
-      "disponibility": true,
+      "disponibility": false,
       "dateCreate": "1940-01-01T00:00:00Z",
       "comments": [],
       "category": "Abstrait",
       "description": "This self-portrait features Frida Kahlo adorned with a thorn necklace, symbolizing her pain and suffering. A lifeless hummingbird hangs from the necklace, while a monkey and a black cat accompany her, adding layers of meaning related to love, luck, and personal turmoil.",
       "discount": null,
-      "nbLikes": 3500
+      "nbLikes": 350
     },
     {
       "id": "13",
@@ -58,15 +90,21 @@
       "height": 40,
       "width": 30.7,
       "painter": "Catrine-Alexandre",
-      "price": 5000000,
+      "price": 500,
       "quantity": 1,
       "disponibility": true,
       "dateCreate": "1944-01-01T00:00:00Z",
-      "comments": [],
+      "comments": [
+        {
+          "author": "islem",
+          "date": "2024-11-14T20:54:23.895Z",
+          "message": "trop beau"
+        }
+      ],
       "category": "Abstrait",
       "description": "This oil painting depicts Frida Kahlo with a fragmented ionic column representing her spine, which has been injured from a bus accident. The artist's body is adorned with nails, symbolizing her physical and emotional pain, while tears flow down her face, reflecting her suffering.",
       "discount": null,
-      "nbLikes": 4000
+      "nbLikes": 40
     },
     {
       "id": "14",
@@ -75,15 +113,26 @@
       "height": 59.7,
       "width": 49.5,
       "painter": "Catrine-Alexandre",
-      "price": 8000000,
+      "price": 800,
       "quantity": 1,
       "disponibility": true,
       "dateCreate": "1939-01-01T00:00:00Z",
-      "comments": [],
+      "comments": [
+        {
+          "author": "islem",
+          "date": "2024-11-14T20:55:16.351Z",
+          "message": "amaizing"
+        },
+        {
+          "author": "Azza",
+          "date": "2024-11-14T20:57:42.279Z",
+          "message": "I love this one!!"
+        }
+      ],
       "category": "Abstrait",
       "description": "This painting depicts the tragic suicide of Dorothy Hale, illustrating her falling from a window while simultaneously lying on the bloody pavement below. The work serves as a poignant commentary on despair and the struggles faced by women, reflecting Kahlo's own emotional turmoil.",
       "discount": null,
-      "nbLikes": 4000
+      "nbLikes": 40
     },
     {
       "id": "15",
@@ -92,7 +141,7 @@
       "height": 60,
       "width": 50,
       "painter": "Catrine Alexandre",
-      "price": 7000000,
+      "price": 700,
       "quantity": 1,
       "disponibility": true,
       "dateCreate": "1947-01-01T00:00:00Z",
@@ -100,24 +149,24 @@
       "category": "Abstrait",
       "description": "In this self-portrait, Frida Kahlo depicts herself with disheveled hair, symbolizing her emotional turmoil and vulnerability. The painting reflects her struggles with identity and love, showcasing her unique style and deep connection to her Mexican heritage.",
       "discount": null,
-      "nbLikes": 3200
+      "nbLikes": 320
     },
     {
       "id": "16",
       "name": "La Casa Azul (1931)",
       "photo": "abstrait/Henson-Cendrine/imgH1.jpg",
-      "height": null,
-      "width": null,
+      "height": 50,
+      "width": 50,
       "painter": "Henson Cendrin ",
-      "price": null,
-      "quantity": null,
+      "price": 450,
+      "quantity": 50,
       "disponibility": true,
       "dateCreate": "1931-01-01T00:00:00Z",
       "comments": [],
       "category": "Abstrait",
       "description": "La Casa Azul, or The Blue House, is the birthplace and home of Frida Kahlo. This historic house museum showcases her life, art, and personal belongings, reflecting her deep connection to Mexican culture. The house features vibrant blue walls and a rich collection of folk art, pre-Hispanic pieces, and personal artifacts.",
       "discount": null,
-      "nbLikes": 5000
+      "nbLikes": 50
     },
     {
       "id": "17",
@@ -126,7 +175,7 @@
       "height": 60,
       "width": 50,
       "painter": "Henson Cendrin ",
-      "price": 7000000,
+      "price": 700,
       "quantity": 1,
       "disponibility": true,
       "dateCreate": "1937-01-01T00:00:00Z",
@@ -134,41 +183,41 @@
       "category": "Abstrait",
       "description": "In this poignant self-portrait, Frida Kahlo depicts herself in tears, reflecting her emotional turmoil and struggles with love and identity. The painting captures her raw vulnerability and pain, symbolizing her complex relationship with Diego Rivera and her own physical suffering.",
       "discount": null,
-      "nbLikes": 3500
+      "nbLikes": 30
     },
     {
       "id": "18",
       "name": "Les Fruits de la Terre (1938)",
       "photo": "abstrait/Henson-Cendrine/imgH3.jpg",
-      "height": null,
-      "width": null,
+      "height": 50,
+      "width": 50,
       "painter": "Henson Cendrin ",
-      "price": null,
-      "quantity": null,
+      "price": 450,
+      "quantity": 10,
       "disponibility": true,
       "dateCreate": "1938-01-01T00:00:00Z",
       "comments": [],
       "category": "Abstrait",
       "description": "Les Fruits de la Terre is a vibrant still life that reflects Frida Kahlo's connection to her Mexican heritage. The painting features an array of colorful fruits, symbolizing fertility and life, juxtaposed with elements that represent her personal struggles and the duality of existence. This work was created shortly before her death and serves as a poignant reflection of her experiences.",
       "discount": null,
-      "nbLikes": 3000
+      "nbLikes": 100
     },
     {
       "id": "19",
       "name": "La Victoire (1944)",
       "photo": "abstrait/Henson-Cendrine/imgH4.jpg",
-      "height": null,
-      "width": null,
+      "height": 30,
+      "width": 30,
       "painter": "Henson Cendrin ",
-      "price": null,
-      "quantity": null,
+      "price": 450,
+      "quantity": 2,
       "disponibility": true,
       "dateCreate": "1944-01-01T00:00:00Z",
       "comments": [],
       "category": "Abstrait",
       "description": "La Victoire is a powerful expression of Frida Kahlo's resilience in the face of suffering. The painting symbolizes her struggle and triumph over physical and emotional pain, reflecting her complex relationship with identity and femininity. It showcases vibrant colors and elements that represent her personal battles and victories.",
       "discount": null,
-      "nbLikes": 3000
+      "nbLikes": 30
     },
     {
       "id": "20",
@@ -177,15 +226,15 @@
       "height": 73.7,
       "width": 92.1,
       "painter": "Caravage",
-      "price": null,
-      "quantity": null,
+      "price": 50,
+      "quantity": 50,
       "disponibility": true,
       "dateCreate": "1889-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "A swirling night sky filled with stars over a quiet village, showcasing van Gogh's unique brushwork and emotional intensity.",
       "discount": null,
-      "nbLikes": 10000
+      "nbLikes": 100
     },
     {
       "id": "21",
@@ -194,15 +243,15 @@
       "height": 92.1,
       "width": 73,
       "painter": "Caravage",
-      "price": null,
-      "quantity": null,
-      "disponibility": true,
+      "price": 30,
+      "quantity": 0,
+      "disponibility": false,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "A vibrant still life featuring sunflowers in a vase, celebrated for its bold colors and dynamic composition.",
       "discount": null,
-      "nbLikes": 8000
+      "nbLikes": 80
     },
     {
       "id": "22",
@@ -211,15 +260,15 @@
       "height": 73.3,
       "width": 92.4,
       "painter": "Caravage",
-      "price": null,
-      "quantity": null,
+      "price": 880,
+      "quantity": 40,
       "disponibility": true,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "An intimate depiction of Van Gogh's bedroom in Arles, characterized by its bright colors and expressive lines.",
       "discount": null,
-      "nbLikes": 6000
+      "nbLikes": 60
     },
     {
       "id": "23",
@@ -228,15 +277,15 @@
       "height": 40.7,
       "width": 32.5,
       "painter": "Leonard-de-Vinci",
-      "price": null,
-      "quantity": null,
+      "price": 60,
+      "quantity": 40,
       "disponibility": true,
       "dateCreate": "1889-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "A self-portrait showcasing Van Gogh's emotional state during his time in the asylum, using bold colors and brushstrokes.",
       "discount": null,
-      "nbLikes": 5000
+      "nbLikes": 20
     },
     {
       "id": "24",
@@ -245,15 +294,15 @@
       "height": 60.3,
       "width": 50.2,
       "painter": "Leonard-de-Vinci",
-      "price": null,
-      "quantity": null,
+      "price": 20,
+      "quantity": 60,
       "disponibility": true,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "A still life painting of Vincent's chair with a pipe resting on it, symbolizing his presence even in absence.",
       "discount": null,
-      "nbLikes": 4000
+      "nbLikes": 40
     },
     {
       "id": "25",
@@ -262,15 +311,15 @@
       "height": 73.7,
       "width": 92.1,
       "painter": "Leonard-de-Vinci",
-      "price": null,
-      "quantity": null,
+      "price": 70,
+      "quantity": 7,
       "disponibility": true,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "A depiction of a sower in a field, capturing the essence of rural life and the cycle of nature.",
       "discount": null,
-      "nbLikes": 3000
+      "nbLikes": 30
     },
     {
       "id": "26",
@@ -279,15 +328,15 @@
       "height": 71,
       "width": 93,
       "painter": "Leonard-de-Vinci",
-      "price": null,
-      "quantity": null,
+      "price": 80,
+      "quantity": 10,
       "disponibility": true,
       "dateCreate": "1889-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "A vibrant portrayal of irises in full bloom, showcasing Van Gogh's expressive use of color and texture.",
       "discount": null,
-      "nbLikes": 7000
+      "nbLikes": 70
     },
     {
       "id": "28",
@@ -296,15 +345,15 @@
       "height ": 60,
       "width ": 40,
       "painter ": "Titien",
-      "price ": null,
-      "quantity ": null,
+      "price ": 80,
+      "quantity ": 30,
       "displayable ": true,
       "dateCreate ": "1888-01-01T00:00:00Z",
       "comments": [],
       "category ": "classique",
       "description ": "An exploration of the lives of women in Arles, capturing their essence through vibrant colors and emotional depth.",
       "discount ": null,
-      "nbLikes ": 3500
+      "nbLikes ": 35
     },
     {
       "id": "29",
@@ -313,15 +362,15 @@
       "height ": 60,
       "width ": 50,
       "painter ": "Titien",
-      "price": null,
-      "quantity ": null,
+      "price": 150,
+      "quantity ": 70,
       "disponibility ": true,
       "dateCreate ": "1889-01-01T00:00:00Z",
       "comments ": [],
       "category ": "classique",
       "description ": "A self-portrait depicting Van Gogh after his infamous ear injury, reflecting his emotional state.",
       "discount ": null,
-      "nbLikes": 4000
+      "nbLikes": 40
     },
     {
       "id": "30",
@@ -330,15 +379,15 @@
       "height": 243.9,
       "width": 233.7,
       "painter": "Titien",
-      "price": null,
-      "quantity": null,
+      "price": 90,
+      "quantity": 10,
       "disponibility": true,
       "dateCreate": "1907-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "Considered one of the most significant works in modern art, this painting depicts five women in a disjointed, abstract style that challenges traditional representation.",
       "discount": null,
-      "nbLikes": 12000
+      "nbLikes": 120
     },
     {
       "id": "27",
@@ -347,15 +396,15 @@
       "height": 50,
       "width": 65,
       "painter": "Albert Marquet",
-      "price": null,
-      "quantity": null,
+      "price": 100,
+      "quantity": 15,
       "disponibility": true,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
       "category": "Fauve",
       "description": "A landscape painting featuring red vines in autumn, reflecting Van Gogh's fascination with nature's colors.",
       "discount": null,
-      "nbLikes": 4500
+      "nbLikes": 45
     },
     {
       "id": "31",
@@ -364,15 +413,15 @@
       "height": 349,
       "width": 776,
       "painter": "Albert Marquet",
-      "price": null,
-      "quantity": null,
+      "price": 45,
+      "quantity": 50,
       "disponibility": true,
       "dateCreate": "1937-01-01T00:00:00Z",
       "comments": [],
       "category": "Fauve",
       "description": "A powerful political statement, this mural depicts the horrors of war and suffering, specifically referencing the bombing of Guernica during the Spanish Civil War.",
       "discount": null,
-      "nbLikes": 15000
+      "nbLikes": 150
     },
     {
       "id": "32",
@@ -381,15 +430,15 @@
       "height": 197,
       "width": 129.5,
       "painter": "Albert Marquet",
-      "price": null,
-      "quantity": null,
+      "price": 40,
+      "quantity": 5,
       "disponibility": true,
       "dateCreate": "1903-01-01T00:00:00Z",
       "comments": [],
       "category": "Fauve",
       "description": "A complex composition exploring themes of life and death, featuring a naked couple and a child, reflecting Picasso's Blue Period.",
       "discount": null,
-      "nbLikes": 8000
+      "nbLikes": 80
     },
     {
       "id": "33",
