@@ -20,6 +20,14 @@ export class UserService {
     // Retourne un Observable avec l'utilisateur ou null
     return of(authenticatedUser || null);
   }
+  updatePassword(email: string, newPassword: string): Observable<void> {
+    const user = this.users.find(u => u.email === email);
+    if (user) {
+      user.password = newPassword;
+      console.log(`Password updated for user: ${email}`);
+    }
+    return of();
+  }
 
   constructor() { }
 }
