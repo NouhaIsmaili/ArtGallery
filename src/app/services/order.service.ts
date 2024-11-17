@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Order } from '../model/order';
-const URL='http://localhost:3000/artWork';
+const URL='http://localhost:3000/order';
 @Injectable({
   providedIn: 'root'
 })
@@ -17,7 +17,7 @@ export class OrderService {
     return this.http.get<Order>(URL +'/'+id);
   }
 
-  createOrder(order: Order): Observable<Order> {
+  addOrder(order: Order): Observable<Order> {
     return this.http.post<Order>(URL, order);
   }
 

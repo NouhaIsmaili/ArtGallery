@@ -1,26 +1,56 @@
 
 <!--slides des images about us-->
 
-<div class="slider-container">
+<div class=" position-relative">
     <div class="image-wrapper">
-      <img [src]="images[currentIndex]" alt="Image {{currentIndex + 1}}" />
+      <img [src]="images[currentIndex]" width="1000px" height="450px" />
       <div class="overlay">
-        <h3 class="image-title">Welcome to our Gallery</h3>
-        <button class="learn-more-btn" href="aboutUs.html">Learn More</button>
+        <h3 class="text-center fs-3 mb-3">Welcome to our Gallery</h3>
+        <button class="btn btn-danger fs-5" href="aboutUs.html">Learn More</button>
       </div>
     </div>
   </div>
 
-<!-- 
+  <br>
+  
+  <br>
+    
+  <h1 class="text-center fs-1 mt-3 mb-2"> Highly Rated</h1>
 
-<mat-grid-list cols="4" rowHeight="1:1">
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
-  <mat-grid-tile> <app-product></app-product></mat-grid-tile>
+  <div class="col-md-6 d-flex">
+        <app-product [tab]="sortedProducts[0]"></app-product>
+        <app-product [tab]="sortedProducts[1]"></app-product>
+        <app-product [tab]="sortedProducts[2]"></app-product>
+        <app-product [tab]="sortedProducts[3]"></app-product>
+        <app-product [tab]="sortedProducts[4]"></app-product>
+  </div>
+  <!-- category -->
+  <h1 class="text-center fs-1 mt-3 mb-2">Our Art Works</h1>
 
-</mat-grid-list> -->
+  <div class="divCateg" >
+
+  <mat-grid-list cols="3" rowHeight="250px"   >
+    <mat-grid-tile [routerLink]="['/allTab']" [colspan]="1" [rowspan]="2"  >
+        <img src="alltab.png" >
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+        <h3 class="position-absolute top-50 start-50 translate-middle text-white  fw-bold fs-2 ">
+          All Art Table
+        </h3>
+    </mat-grid-tile>
+  
+  
+    @for (tile of tiles; track tile) {
+      <mat-grid-tile [routerLink]="['/products', tile.categ]" [colspan]="tile.cols" [rowspan]="tile.rows" >
+      
+        <img [src]="tile.src">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 "></div>
+        <h3 class="position-absolute top-50 start-50 translate-middle text-white  fw-bold fs-2 ">
+          {{tile.categ}}
+        </h3>
+      
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+  </div>
+  
+  

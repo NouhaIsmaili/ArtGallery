@@ -1,7 +1,7 @@
 export enum Category {
-    abstrait="abstrait",
+    abstrait="Abstrait",
     classique="classique",
-    fauve="fauve",
+    fauve="Fauve",
     figuratif="figuratif",
     pop_art="pop_art"
 }

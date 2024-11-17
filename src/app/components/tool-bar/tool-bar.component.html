@@ -1,8 +1,11 @@
-<mat-toolbar color="primary" >
+<mat-toolbar class="m-1  " >
     <!--thez lel home-->
     <span mat-button routerLink="/home">
-        <mat-icon>shopping_cart</mat-icon> 
+        
         Gallery
+    </span>
+    <span mat-button routerLink="/change">
+        change
     </span>
 
     <div class="example-spacer">
@@ -11,7 +14,7 @@
     </div> 
 
   
-    <button mat-icon-button routerLink="Users" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <button mat-icon-button routerLink="Users" routerLink="/wishList" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>add_shopping_cart</mat-icon>
     </button>
     

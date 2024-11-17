@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ArtTable } from '../model/art-table';
+import { Category } from '../model/category';
 const URL="http://localhost:3000/artWork";
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,10 @@ const URL="http://localhost:3000/artWork";
 export class ArtTableService {
   private readonly http: HttpClient = inject(HttpClient);
 
+  // updateOrder(articles: ArtTable[]): Observable<ArtTable[]> {
+  //   return this.http.put<ArtTable[]>(URL, articles); // Use PUT to replace the collection
+  // }
+  
   getProducts(): Observable<ArtTable[]> {
     return this.http.get<ArtTable[]>(URL);
   }
@@ -35,6 +40,10 @@ export class ArtTableService {
 
   updateComments(id: string, comments: Comment[]): Observable<ArtTable> {
     return this.http.patch<ArtTable>(`${URL}/${id}`, { comments });
+  }
+
+  getProductsByCategory(category: Category): Observable<ArtTable[]> {
+    return this.http.get<ArtTable[]>(`${URL}?category=${category}`);
   }
   // updateDisponibility(product: ArtTable): Observable<ArtTable> {
   //   disponibility:Boolean = product.quantity > 0;

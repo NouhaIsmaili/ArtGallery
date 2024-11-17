@@ -1,7 +1,7 @@
-<div id="box">
+<div id="box" (click)="openDialog(tab)">
   <img [src]=tab.photo>
   <h2>{{tab.name}}</h2>
-  <div id="next">
+  <div class="d-flex justify-content-between">
     @if(!tab.disponibility){
     <!-- produit non disponible -->
     <div class="alert alert-danger text-center" role="alert">
@@ -13,8 +13,8 @@
       <span class="text-muted " style="text-decoration: line-through;">
         {{ tab.price | currency }}
       </span>
-
-      <span class="text-danger ">
+      <br>
+      <span class="text-danger fs-5 ">
         {{ (tab.price * (1 - tab.discount / 100)) | currency }}
       </span>
     </div>
@@ -23,7 +23,7 @@
     </strong>
 
     }@else {
-    <span class="text-muted ms-3">
+    <span class=" ms-3  fs-5 ">
       {{ tab.price | currency }}
     </span>
     }
@@ -31,9 +31,7 @@
       favorite
       <p>{{tab.nbLikes}}</p>
     </div>
-    <button (click)="openDialog(tab)" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-      <mat-icon>more_vert</mat-icon>
-    </button>
+    
 
   </div>
 </div>

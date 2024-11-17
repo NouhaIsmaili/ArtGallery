@@ -1,29 +1,28 @@
 <h2 mat-dialog-title class="text-center"> {{ data.name }}</h2>
+
 <mat-dialog-content class="mat-typography">
   
   <div class="container">
     <div class="row">
-        <div class="col-md-4">
-          <img [src]="data.photo"  width=300px height=200px>
+        <div class="col-md-5">
+          <img [src]="data.photo"  width=200px height=200px>
           <p><strong class="col-md-8">{{ data.painter }}</strong> <em class="col-md-4">{{ data.dateCreate | date }}</em> </p>
-          @if(!data.disponibility){
-            <!-- produit non disponible -->
-            <div class="alert alert-danger text-center" role="alert">
-              Sold Out
-            </div>
-          }@else if(data.discount>0){
+        @if(!data.disponibility){
+          <!-- produit non disponible -->
+          <div class="alert alert-danger text-center" role="alert">
+            Sold Out
+          </div>
+        }@else{
+          @if(data.discount>0){
             <!-- produit avec discount -->
             <div class="container">
-              <div class="product-price">
-                
+              <div class="product-price">              
                 <span class="text-muted ms-3" style="text-decoration: line-through;">
                   {{ data.price | currency }}
-                </span>
-                
+                </span>            
                 <span class="text-danger ms-3">
                   {{ (data.price * (1 - data.discount / 100)) | currency }}
                 </span>
-              
                 <span class="badge text-bg-success ms-7">
                   -{{ data.discount }}%
                 </span>
@@ -34,15 +33,26 @@
               {{ data.price | currency }}
             </span>
           }
-
+          <br>
+          <!-- Quantity -->
+           <div class="input-group ">
+          <input type="number" class="form-control text-center col-md-2" [min]="1"  style="width: 70px;" [(ngModel)]="quantity"/>
+          <button mat-button mat-dialog-close class="btn btn-success" (click)="onAddShopCard()">
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button></div>
+   
+        }
+        
         </div>
-        <div class="col-md-8">
+        <div width=500px class="col-md-7">
           <p><strong>Description:</strong> {{ data.description }}</p>
           <p><strong>Dimensions:</strong> {{ data.width }}m -{{data.height}}m</p>
+          <p><strong>Category:</strong> {{ data.category }}</p>
+
           <div>
             <strong>comments:</strong>
             <!-- formilaire commentaire -->
-            <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+            <form [formGroup]="commentForm" (ngSubmit)="onSubmit();commentForm.reset()">
               <div>
                   <input type="text" class=" form-control" placeholder="tap your name" name="author"  formControlName="author">
               </div>
@@ -73,7 +83,4 @@
 <mat-dialog-actions align="end">
   <button mat-button class="btn btn-danger" mat-dialog-close>Cancel</button>
 
-  <button mat-button mat-dialog-close class="btn btn-success" (click)="onAddShopCard()">
-    <mat-icon>add_shopping_cart</mat-icon>
-  </button>
 </mat-dialog-actions>
