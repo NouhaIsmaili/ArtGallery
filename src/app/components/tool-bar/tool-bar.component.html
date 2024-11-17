@@ -1,15 +1,32 @@
-<mat-toolbar color="primary" >
+<mat-toolbar class="m-1  " >
     <!--thez lel home-->
-    <span mat-button routerLink="Home"><mat-icon>shopping_cart</mat-icon> Gallery</span>
-    <div      class="example-spacer"></div> 
-    <a mat-button routerLink="Home">products</a>
-    <a mat-button routerLink="Users">
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-            <mat-icon>add_shopping_cart</mat-icon>
-        </button>
-    </a>
-   <a mat-button routerLink="Products">about us</a>
-   <a mat-button routerLink="Home">log in</a>
+    <span mat-button routerLink="/home">
+        
+        Gallery
+    </span>
+    <span mat-button routerLink="/change">
+        change
+    </span>
+
+    <div class="example-spacer">
+    <!-- <button mat-button routerLink="/allTab">products</button> 
+        hedhi bch n7ot click here for more wala faza-->
+    </div> 
+
+  
+    <button mat-icon-button routerLink="Users" routerLink="/wishList" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+    
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>search</mat-icon>
+    </button>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>person</mat-icon>
+    </button>
+
+
 
 </mat-toolbar>
 

@@ -1,0 +1,12 @@
+<button (click)="saveOrder()">Sauvegarder l'ordre</button>
+
+<ul cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    @for(tab of liste;track $index){
+        <li class="example-box" cdkDrag>
+            <img [src]=tab.photo height="100px" width="100px">
+            {{tab.id}}--{{tab.name}}
+        </li>
+        
+    }
+    </ul> 
+  
