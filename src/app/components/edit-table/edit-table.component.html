@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Édition du produit</h2>
+@if(table){
+  <div>
+    <form>
+      <!-- Nom du produit -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="table.name" readonly />
+      </div>
+
+      <!-- Catégorie -->
+      <div class="mb-3">
+        <label for="category" class="form-label">Catégorie</label>
+        <input type="text" id="category" class="form-control" [(ngModel)]="table.category" readonly />
+      </div>
+
+      <!-- Gestion de l'état -->
+      <div class="mb-3">
+        <label class="form-label">État</label>
+        <button
+          class="btn"
+          [ngClass]="{
+            'btn-outline-primary': table.state === 'En cours',
+            'btn-outline-success': table.state === 'Confirmé'
+          }"
+          (click)="onStatus()"
+        >
+          {{ table.state }}
+        </button>
+      </div>
+
+      <!-- Gestion de la quantité -->
+      <div class="mb-3">
+        <label class="form-label">Quantité</label>
+        <p class="mb-2">Quantité actuelle : {{ table.quantity }}</p>
+        @if (!table.disponibility) {
+          <p class="text-danger">Produit indisponible</p>
+        }
+        <button class="btn btn-outline-success" (click)="addQuantity()">Ajouter Quantité</button>
+      </div>
+
+      <!-- Bouton retour -->
+      <button class="btn btn-secondary" (click)="onRetour()">Retour</button>
+    </form>
+  </div>}
+</div>

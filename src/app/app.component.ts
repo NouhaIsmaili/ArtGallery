@@ -4,11 +4,13 @@ import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { UserComponent } from './components/user/user.component';
 import { ChangedPasswordComponent } from './components/changed-password/changed-password.component';
+import { TablesComponent } from './components/tables/tables.component';
+import { EditTableComponent } from './components/edit-table/edit-table.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolBarComponent, HomeComponent,UserComponent,ChangedPasswordComponent],
+  imports: [RouterOutlet, ToolBarComponent, HomeComponent,UserComponent,ChangedPasswordComponent,TablesComponent, EditTableComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

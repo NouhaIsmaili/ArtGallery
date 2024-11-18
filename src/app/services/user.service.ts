@@ -6,20 +6,23 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
+  // Liste des utilisateurs disponibles
   private users: User[] = [
-    new User('Admin', 'admin@example.com', 'admin123'),
-    new User('SuperAdmin', 'superadmin@example.com', 'superadmin123')
+    new User('Adminadmin', 'admin@example.com', 'admin123456'),
   ];
 
+  // Méthode pour authentifier un utilisateur
   authenticate(email: string, password: string): Observable<User | null> {
-
     const authenticatedUser = this.users.find(
-      u => u.email === email && u.password === password
+      u => u.email.trim().toLowerCase() === email.trim().toLowerCase() &&
+           u.password === password
     );
-
-    // Retourne un Observable avec l'utilisateur ou null
     return of(authenticatedUser || null);
   }
+  
+  
+
+  // Mise à jour du mot de passe pour un utilisateur
   updatePassword(email: string, newPassword: string): Observable<void> {
     const user = this.users.find(u => u.email === email);
     if (user) {
@@ -29,5 +32,5 @@ export class UserService {
     return of();
   }
 
-  constructor() { }
+  constructor() {}
 }

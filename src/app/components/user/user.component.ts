@@ -8,43 +8,59 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css'] 
+  styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  nbTentatives: number = 0; 
+  // Nombre de tentatives de connexion
+  nbTentatives: number = 0;
+
+  // Injection des dépendances
   public readonly userService: UserService = inject(UserService);
-  userForm!: FormGroup;
   readonly fb: FormBuilder = inject(FormBuilder);
-  private router: Router = inject(Router); 
+  private router: Router = inject(Router);
+
+  // Formulaire utilisateur
+  userForm!: FormGroup;
+
   ngOnInit(): void {
+    // Initialisation du formulaire avec des validations
     this.userForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]], // Ajout de la validation d'email
-      pwd: ['', Validators.required]
+      email: ['', [Validators.required, Validators.email]], // Validation d'email
+      pwd: ['', Validators.required] // Mot de passe requis
     });
   }
 
+  // Méthode appelée lors de la soumission du formulaire
   onSubmit() {
-    const { email, pwd } = this.userForm.value;
-    this.userService.authenticate(email, pwd).subscribe(user => {
-      if (user) {
-        console.log("Login successful");
-        this.nbTentatives = 0; 
-      } else {
-        this.nbTentatives++;
-        console.log(`Failed login attempts: ${this.nbTentatives}`);
-        if (this.nbTentatives >= 3) {
-          //routage
-          this.router.navigate(['/change-password']);
+    if (this.userForm.valid) {
+      const { email, pwd } = this.userForm.value;
+      console.log('Email entered:', email);
+      console.log('Password entered:', pwd);
+  
+      this.userService.authenticate(email, pwd).subscribe(user => {
+        if (user) {
+          console.log('Login successful:', user);
+          this.nbTentatives = 0;
+          this.router.navigate(['/tables']);
+        } else {
+          this.nbTentatives++;
+          console.log(`Failed login attempts: ${this.nbTentatives}`);
+          if (this.nbTentatives >= 3) {
+            this.router.navigate(['/changePassword']);
+          }
         }
-      }
-    });
+      });
+    }
   }
+  
 
-  isValidEmail(){
+  // Vérification si l'email est invalide
+  isValidEmail() {
     return this.userForm.get('email')?.invalid && this.userForm.get('email')?.touched;
   }
 
-  isValidPassword(){
+  // Vérification si le mot de passe est invalide
+  isValidPassword() {
     return this.userForm.get('pwd')?.invalid && this.userForm.get('pwd')?.touched;
   }
 }
