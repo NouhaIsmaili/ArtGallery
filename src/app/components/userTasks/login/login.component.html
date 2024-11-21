@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="screen-1">
+        <form [formGroup]="userForm"  >
+       
+        <div class="email">
+          
+            <label for="email">Email Address</label>
+            <div class="sec-2">
+                <input type="email" name="email" placeholder="Username@gmail.com" formControlName="email"/>
+                <!-- @if(isValidEmail()){
+                    <div class="alert alert-danger">
+                        email incorrect!
+                        </div>
+                  } -->
+            </div>
+        </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <div class="sec-2">
+                <input type="password" name="password" placeholder="············" class="pas" formControlName="pwd" />
+                <!-- @if(isValidPassword())
+                {
+                    <div class="alert alert-danger">
+                        password incorrect !
+                        </div>
+                  } -->
+            </div>
+        </div>
+        <button class="login"  (click)="onSubmit()">Login</button>
+    </form>
+    <div class="footer">
+        <a routerLink="/pwdChange">change password</a> 
+     </div>
+      
+    </div>
+    </div>
+
+
+
+<button btn btn-success routerLink="/productEdit">products</button>

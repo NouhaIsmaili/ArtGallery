@@ -1,25 +1,26 @@
-  <div class="d-flex">
-  <input 
-  type="text" 
-  class="form-control col-md-5" 
-  placeholder="Search for a product..." 
-  [(ngModel)]="searchTerm" 
-  (input)="searchProducts()" />
   
-    <input 
-      type="number" 
-      placeholder="Enter max price" 
-      [(ngModel)]="maxPrice" 
-      class="form-control col-md-2" />
- 
-    <input 
-      type="number" 
-      placeholder="Enter min price" 
-      [(ngModel)]="minPrice" 
-      class="form-control col-md-2" />
   
-    <button (click)="filterProductsByPrice()" class="col-md-2">Search</button>
-</div>
+  <div  class="container d-flex">
+    
+
+    <input 
+    type="text" 
+    class="form-control col-md-5" 
+    placeholder="🔍Search for a product..." 
+    [(ngModel)]="searchTerm" 
+    (input)="searchProducts()" />
+    <input 
+      (input)="filterProductsByPrice()"
+        type="number" 
+        placeholder="min price" 
+        [(ngModel)]="minPrice" 
+        class="form-control col-md-2" />
+      <input 
+        type="number" 
+        placeholder="max price" 
+        [(ngModel)]="maxPrice" 
+        class="form-control col-md-2"  (input)="filterProductsByPrice()" />
+  </div>
 @if(filteredProducts.length==0){
     <h1 class="text-center fs-1 mt-3 mb-2">SORRY! PRODUCTS NOT FOUND :( </h1>
 

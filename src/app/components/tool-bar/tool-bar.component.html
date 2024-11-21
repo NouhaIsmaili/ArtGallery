@@ -1,8 +1,8 @@
-<mat-toolbar class="m-1  " >
+<mat-toolbar  class="m-1 h-25 " >
     <!--thez lel home-->
     <span mat-button routerLink="/home">
         
-        Gallery
+        <img src="aboutUsPhotos/logo.jpg" height="125px" width="125px" class="br-5 rounded-circle">
     </span>
     <span mat-button routerLink="/change">
         change
@@ -14,20 +14,20 @@
     </div> 
 
   
-    <button mat-icon-button routerLink="Users" routerLink="/wishList" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>add_shopping_cart</mat-icon>
+    <button mat-icon-button routerLink="Users" routerLink="/wishList" class="example-icon favorite-icon " aria-label="Example icon-button with heart icon">
+        <mat-icon class="fs-3">add_shopping_cart</mat-icon>
     </button>
     
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>search</mat-icon>
+        <mat-icon class="fs-3">search</mat-icon>
     </button>
 
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>person</mat-icon>
+    <button routerLink="/login" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon class="fs-3">person</mat-icon>
     </button>
 
 
 
 </mat-toolbar>
-
+<router-outlet></router-outlet>
   
