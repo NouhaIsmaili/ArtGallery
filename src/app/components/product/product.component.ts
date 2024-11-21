@@ -5,10 +5,11 @@ import { ArtTable } from '../../model/art-table';
 import { ArtTableService } from '../../services/art-table.service';
 import { MatDialog } from '@angular/material/dialog';
 import { InfoProdComponent } from '../info-prod/info-prod.component';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [MatIconModule,CommonModule],
+  imports: [MatIconModule,CommonModule,RouterLink],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

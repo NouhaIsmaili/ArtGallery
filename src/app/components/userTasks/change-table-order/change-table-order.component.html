@@ -1,12 +1,12 @@
 <button (click)="saveOrder()">Sauvegarder l'ordre</button>
 
-<ul cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+<div cdkDropList class="example-list d-flex flex-wrap" (cdkDropListDropped)="drop($event)">
     @for(tab of liste;track $index){
-        <li class="example-box" cdkDrag>
+        <div class="example-box col-md-4" cdkDrag>
             <img [src]=tab.photo height="100px" width="100px">
             {{tab.id}}--{{tab.name}}
-        </li>
+        </div>
         
     }
-    </ul> 
+    </div> 
   

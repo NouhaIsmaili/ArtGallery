@@ -5,11 +5,12 @@ import { OrderService } from '../../services/order.service';
 import { ArtTableService } from '../../services/art-table.service';
 import { Order } from '../../model/order';
 import { RouterLink } from '@angular/router';
+import { EditOrderComponent } from "../userTasks/edit-order/edit-order.component";
 
 @Component({
   selector: 'app-wish-list',
   standalone: true,
-  imports: [DatePipe,FormsModule,ReactiveFormsModule,RouterLink,CurrencyPipe],
+  imports: [DatePipe, FormsModule, ReactiveFormsModule, RouterLink, CurrencyPipe, EditOrderComponent],
   templateUrl: './wish-list.component.html',
   styleUrl: './wish-list.component.css'
 })
@@ -33,6 +34,7 @@ orderForm: FormGroup=new FormGroup({
   ordredProducts: new FormControl(),
   total: new FormControl(),
   orderDate: new FormControl(),
+  state: new FormControl(),
 
 })
 
@@ -47,6 +49,7 @@ orderForm: FormGroup=new FormGroup({
       ordredProducts: [this.wishList],
       total: [this.total],
       orderDate: [new Date()],
+      state: ['In Progress'],
 
     });
 

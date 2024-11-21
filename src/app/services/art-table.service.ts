@@ -21,6 +21,7 @@ export class ArtTableService {
   getProductById(id: string): Observable<ArtTable> {
     return this.http.get<ArtTable>(URL +'/'+id);
   }
+  
 
   addProduct(product: ArtTable): Observable<ArtTable> {
     return this.http.post<ArtTable>(URL, product);

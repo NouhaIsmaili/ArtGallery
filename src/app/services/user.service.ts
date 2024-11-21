@@ -1,24 +1,50 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { User } from '../model/user';
 import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+const URL="http://localhost:3000/user";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private users: User[] = [
-    new User('AdminArtGallery', 'adminArtGallery@gmail.com', 'artgallery123456'),
-  ];
+  private readonly http: HttpClient = inject(HttpClient);
 
-  authenticate(email: string, password: string): Observable<User | null> {
+  // user:User={
+  //   "id":"1",
+  //   "email":"gallery@gmail.com",
+  //   "pwd":"123456789"
 
-    const authenticatedUser = this.users.find(
-      u => u.email === email && u.password === password
-    );
+  // }
 
-    // Retourne un Observable avec l'utilisateur ou null
-    return of(authenticatedUser || null);
+  getuser():Observable<User>{
+    return this.http.get<User>(URL);
   }
+  getUserById( id:string): Observable<User> {
+    return this.http.get<User>(URL +'/'+id);
+  }
+
+
+  login(email:string,pwds:string,user:User):Observable<boolean>{
+      let connected=( pwds===user.pwd && email===user.email);
+      if(connected){
+        localStorage.setItem("state","connected");
+      }else{
+        localStorage.setItem("state","disconnected");
+      }
+      return of(connected);
+  }
+
+
+  logout(){
+    localStorage.setItem("state","disconnected")
+  }
+
+  changerPwd(pwd:string):Observable<User>{
+        return this.http.patch<User>(URL+'/1',{pwd})
+  }
+  
+  
 
   constructor() { }
 }

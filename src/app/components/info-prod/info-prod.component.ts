@@ -1,22 +1,20 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogActions, MatDialogClose, MatDialogContent } from '@angular/material/dialog';
+import {  MatDialogClose } from '@angular/material/dialog';
 import { ArtTable } from '../../model/art-table';
-import { CurrencyPipe, DatePipe, JsonPipe } from '@angular/common';
+import { CurrencyPipe, DatePipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommentService } from '../../services/comment.service';
 import { ArtTableService } from '../../services/art-table.service';
 import { Comment as ArtComment } from '../../model/comment';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-info-prod',
   standalone: true,
   imports: [ReactiveFormsModule,
-     MatDialogActions,
      MatDialogClose,
-      MatDialogContent,
        DatePipe, 
        CurrencyPipe, 
-       JsonPipe, 
        MatIconModule,
       FormsModule],
   templateUrl: './info-prod.component.html',
@@ -24,23 +22,31 @@ import { Comment as ArtComment } from '../../model/comment';
 })
 export class InfoProdComponent implements OnInit {
   //info produit by dialog
-  readonly data: ArtTable = inject(MAT_DIALOG_DATA);
-  
+  activatedRoute:ActivatedRoute = inject(ActivatedRoute);
+  identifiant!:string ;
+
   //formulaire-commentaire
   readonly fb: FormBuilder = inject(FormBuilder)
   commentService: CommentService = inject(CommentService)
   artTableService: ArtTableService = inject(ArtTableService)
   newComment: ArtComment[] = []
+  data!:ArtTable
   ngOnInit(): void {
-    console.log(this.data)
-
+    this.identifiant = this.activatedRoute.snapshot.params['id'];
+    this.artTableService.getProductById(this.identifiant).subscribe(
+      prod=>{
+        this.data=prod;
+        console.log(this.data)
+       this.newComment=prod.comments||[]
+        
+      }
+    )
 
     this.commentForm = this.fb.nonNullable.group({
       author: ['',Validators.required],
       date: [new Date()],
       message: ['',Validators.required]
     });
-    this.newComment = this.data.comments || [];
 
 
   }
@@ -59,7 +65,7 @@ export class InfoProdComponent implements OnInit {
     this.newComment.push(this.commentForm.value)
     console.log(JSON.stringify(this.newComment))
 
-  this.artTableService.updateComments(this.data.id,JSON.parse((JSON.stringify(this.newComment)))).subscribe(
+  this.artTableService.updateComments(this.identifiant,JSON.parse((JSON.stringify(this.newComment)))).subscribe(
     comntr => {
       console.log( comntr);
     }
@@ -73,7 +79,7 @@ quantity: number=1;
     console.log(this.quantity);
     const wishList={
       article:this.data,
-      qte:this.quantity
+      qte:this.quantity,
     }
     wish.push(wishList)
     localStorage.setItem('list',JSON.stringify(wish))
