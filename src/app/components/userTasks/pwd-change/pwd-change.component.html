@@ -1,0 +1,36 @@
+
+  <!-- if ecrir wrong pwd changer mot de passe   -->
+  <div class="container">
+    <div class="screen-1">
+        <form id="changePasswordForm" [formGroup]="passwordGroup">
+       
+        <div class="email">
+          
+            <label for="email">old password</label>
+            <div class="sec-2">
+                <input type="password" name="password" placeholder="Enter old password" formControlName="OldPassword"/>
+                <!-- @if(isInValidNewpwd()) {
+                    <div class="alert alert-danger mt-2">
+                        Password must be at least 6 characters long!
+                    </div>
+                } -->
+            </div>
+        </div>
+        <div class="password">
+            <label for="password">new password</label>
+            <div class="sec-2">
+                <input type="password" name="password"placeholder="new password" formControlName="NewPassword" />
+                <!-- @if(isInValidConfirmpwd()) {
+                    <div class="alert alert-danger mt-2">
+                        Password must be at least 6 characters long!
+                    </div>
+                } -->
+            </div>
+        </div>
+        <button [disabled]="passwordGroup.invalid" type="submit"  class="login" (click)="onChange()">Save</button>
+    </form>
+        <div class="footer">
+           <a routerLink="/login">Login</a> 
+        </div>
+    </div>
+    </div>

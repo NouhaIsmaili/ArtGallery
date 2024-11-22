@@ -1,0 +1,10 @@
+<p>api works!</p>
+<div>
+    <h3>Spotify Search</h3>
+    <button (click)="searchSpotify()">Search Spotify</button>
+    @if(response){
+    <div >
+      <h4>Response:</h4>
+      <pre>{{ response | json }}</pre>
+    </div>}
+  </div>

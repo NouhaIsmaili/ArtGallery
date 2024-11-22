@@ -14,7 +14,10 @@
   <br>
   
   <br>
-    
+
+  <app-api></app-api>
+
+    <!-- high rated -->
   <h1 class="text-center fs-1 mt-3 mb-2"> Highly Rated</h1>
 
   <div class="col-md-6 d-flex">
@@ -30,7 +33,7 @@
   <div class="divCateg" >
 
   <mat-grid-list cols="3" rowHeight="250px"   >
-    <mat-grid-tile [routerLink]="['/allTab']" [colspan]="1" [rowspan]="2"  >
+    <mat-grid-tile routerLink="/products" [colspan]="1" [rowspan]="2"  >
         <img src="alltab.png" >
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
         <h3 class="position-absolute top-50 start-50 translate-middle text-white  fw-bold fs-2 ">
@@ -40,7 +43,7 @@
   
   
     @for (tile of tiles; track tile) {
-      <mat-grid-tile [routerLink]="['/products', tile.categ]" [colspan]="tile.cols" [rowspan]="tile.rows" >
+      <mat-grid-tile [routerLink]="['/products/', tile.categ]" [colspan]="tile.cols" [rowspan]="tile.rows" >
       
         <img [src]="tile.src">
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50 "></div>
@@ -52,5 +55,4 @@
     }
   </mat-grid-list>
   </div>
-  
   

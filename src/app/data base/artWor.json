@@ -1,4 +1,12 @@
 {
+  "user": [
+    {
+      "id": "1",
+      "email": "gallery@gmail.com",
+      "pwd": "00112233",
+      "newPwd": "123456"
+    }
+  ],
   "order": [
     {
       "id": "ddf2",
@@ -34,7 +42,208 @@
         }
       ],
       "total": 140,
-      "orderDate": "2024-11-17T17:07:18.190Z"
+
+      "orderDate": "2024-11-17T17:07:18.190Z",
+      "state": "In Progress"
+    },
+    {
+      "id": "c06e",
+      "clientName": "islem",
+      "clientPhoneNumber": 22222222,
+      "clientAdress": "charguia",
+      "ordredProducts": [
+        {
+          "article": {
+            "id": "11",
+            "name": "Les Deux Fridas ",
+            "photo": "abstrait/Baroni-Victor/imgB1.jpg",
+            "height": 173,
+            "width": 173,
+            "painter": "Baroni Victor",
+            "price": 100,
+            "quantity": 1,
+            "disponibility": true,
+            "dateCreate": "1939-01-01T00:00:00Z",
+            "comments": [
+              {
+                "author": "nouha",
+                "date": "2024-11-14T19:18:56.556Z",
+                "message": "amazing"
+              }
+            ],
+            "category": "Abstrait",
+            "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
+            "discount": 30,
+            "nbLikes": 302
+          },
+          "qte": 2
+        },
+        {
+          "article": {
+            "id": "42",
+            "name": "La Cène",
+            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
+            "height": 460,
+            "width": 880,
+            "painter": "Leger Vincent",
+            "price": null,
+            "quantity": null,
+            "disponibility": true,
+            "dateCreate": "1495-1498",
+            "comments": [],
+            "category": "figuratif",
+            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
+            "discount": null,
+            "nbLikes": 18002
+          },
+          "qte": 2
+        }
+      ],
+      "total": 140,
+      "orderDate": "2024-11-17T23:03:52.733Z",
+      "state": "completed"
+    },
+    {
+      "id": "7abb",
+      "clientName": "laila",
+      "clientPhoneNumber": 99999999,
+      "clientAdress": "wwwww",
+      "ordredProducts": [
+        {
+          "article": {
+            "id": "11",
+            "name": "Les Deux Fridas ",
+            "photo": "abstrait/Baroni-Victor/imgB1.jpg",
+            "height": 173,
+            "width": 173,
+            "painter": "Baroni Victor",
+            "price": 100,
+            "quantity": 1,
+            "disponibility": true,
+            "dateCreate": "1939-01-01T00:00:00Z",
+            "comments": [
+              {
+                "author": "nouha",
+                "date": "2024-11-14T19:18:56.556Z",
+                "message": "amazing"
+              }
+            ],
+            "category": "Abstrait",
+            "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
+            "discount": 30,
+            "nbLikes": 302
+          },
+          "qte": 2
+        },
+        {
+          "article": {
+            "id": "32",
+            "name": "Guernica",
+            "photo": "Fauve/Albert-Marquet/imgAM2.jpeg",
+            "height": 349,
+            "width": 776,
+            "painter": "Albert Marquet",
+            "price": 45,
+            "quantity": 50,
+            "disponibility": true,
+            "dateCreate": "1937-01-01T00:00:00Z",
+            "comments": [],
+            "category": "Fauve",
+            "description": "A powerful political statement, this mural depicts the horrors of war and suffering, specifically referencing the bombing of Guernica during the Spanish Civil War.",
+            "discount": null,
+            "nbLikes": 150
+          },
+          "qte": 2
+        },
+        {
+          "article": {
+            "id": "32",
+            "name": "Guernica",
+            "photo": "Fauve/Albert-Marquet/imgAM2.jpeg",
+            "height": 349,
+            "width": 776,
+            "painter": "Albert Marquet",
+            "price": 45,
+            "quantity": 50,
+            "disponibility": true,
+            "dateCreate": "1937-01-01T00:00:00Z",
+            "comments": [],
+            "category": "Fauve",
+            "description": "A powerful political statement, this mural depicts the horrors of war and suffering, specifically referencing the bombing of Guernica during the Spanish Civil War.",
+            "discount": null,
+            "nbLikes": 150
+          },
+          "qte": 1
+        }
+      ],
+      "total": 275,
+      "orderDate": "2024-11-18T21:28:18.956Z",
+      "state": "completed"
+    }
+  ],
+  "artWork": [
+    {
+      "id": "11",
+      "name": "Les Deux Fridas ",
+      "photo": "abstrait/Baroni-Victor/imgB1.jpg",
+      "height": 173,
+      "width": 173,
+      "painter": "Baroni Victor",
+      "price": 100,
+      "quantity": 1,
+      "disponibility": true,
+      "dateCreate": "1939-01-01T00:00:00Z",
+      "comments": [
+        {
+          "author": "nouha",
+          "date": "2024-11-14T19:18:56.556Z",
+          "message": "amazing"
+        }
+      ],
+      "category": "Abstrait",
+      "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
+      "discount": 30,
+      "nbLikes": 302
+    },
+    {
+      "id": "12",
+      "name": "La Colonne brisée (1944)",
+      "photo": "abstrait/Catrine-Alexandre/imgC1.jpg",
+      "height": 40,
+      "width": 30.7,
+      "painter": "Catrine-Alexandre",
+      "price": 500,
+      "quantity": 1,
+      "disponibility": true,
+      "dateCreate": "1944-01-01T00:00:00Z",
+      "comments": [
+        {
+          "author": "islem",
+          "date": "2024-11-14T20:54:23.895Z",
+          "message": "trop beau"
+        }
+      ],
+      "category": "Abstrait",
+      "description": "This oil painting depicts Frida Kahlo with a fragmented ionic column representing her spine, which has been injured from a bus accident. The artist's body is adorned with nails, symbolizing her physical and emotional pain, while tears flow down her face, reflecting her suffering.",
+      "discount": null,
+      "nbLikes": 40
+    },
+    {
+      "id": "13",
+      "name": "Autoportrait avec collier d'épines et colibri (1940)",
+      "photo": "abstrait/Baroni-Victor/imgB3.jpg",
+      "height": 61.2,
+      "width": 47,
+      "painter": "Baroni Victor",
+      "price": 800,
+      "quantity": 1,
+      "disponibility": false,
+      "dateCreate": "1940-01-01T00:00:00Z",
+      "comments": [],
+      "category": "Abstrait",
+      "description": "This self-portrait features Frida Kahlo adorned with a thorn necklace, symbolizing her pain and suffering. A lifeless hummingbird hangs from the necklace, while a monkey and a black cat accompany her, adding layers of meaning related to love, luck, and personal turmoil.",
+      "discount": null,
+      "nbLikes": 350
     },
     {
       "id": "a960",
@@ -442,23 +651,6 @@
       "nbLikes": 8000
     },
     {
-      "id": "41",
-      "name": "La Joconde (Mona Lisa)",
-      "photo": "figuratif/Leger-Vincent/imgL1.jpg",
-      "height": 77,
-      "width": 53,
-      "painter": "Leger Vincent",
-      "price": null,
-      "quantity": null,
-      "disponibility": true,
-      "dateCreate": "1503-1506",
-      "comments": [],
-      "category": "figuratif",
-      "description": "La Joconde, also known as Mona Lisa, is one of the most famous paintings in the world, depicting Lisa Gherardini with an enigmatic expression. The painting is renowned for its sophisticated use of sfumato and atmospheric perspective.",
-      "discount": null,
-      "nbLikes": 20000
-    },
-    {
       "id": "42",
       "name": "La Cène",
       "photo": "figuratif/Leger-Vincent/imgL2.jpg",
@@ -473,7 +665,7 @@
       "category": "figuratif",
       "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
       "discount": null,
-      "nbLikes": 18001
+      "nbLikes": 18002
     },
     {
       "id": "43",
@@ -784,31 +976,17 @@
       "comments": [
         "A mesmerizing vision of neon lights and pop culture.",
         {
-          "author": "Islem Omrani",
-          "date": "2024-11-21T20:17:45.007Z",
-          "message": "hjhbhjbhj"
+
+          "author": "lala",
+          "date": "2024-11-17T23:02:48.692Z",
+          "message": "like it"
+
         }
       ],
       "category": "pop_art",
       "description": "Neon colors bring iconic symbols to life in this dynamic piece.",
       "discount": 5,
-      "nbLikes": 18000
-    },
-    {
-      "id": "638f",
-      "name": "",
-      "photo": "",
-      "height": 0,
-      "width": 0,
-      "painter": "",
-      "price": 0,
-      "quantity": 0,
-      "disponibility": true,
-      "discount": 0,
-      "nbLikes": 0,
-      "dateCreate": "",
-      "description": "",
-      "category": "Abstrait"
+      "nbLikes": 18001
     }
   ]
 }

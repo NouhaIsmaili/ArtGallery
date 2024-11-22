@@ -1,11 +1,11 @@
-<h2 mat-dialog-title class="text-center"> {{ data.name }}</h2>
 
-<mat-dialog-content class="mat-typography">
   
-  <div class="container">
+  <div class="container border  p-5">
+    <h2  class="text-center"> {{ data.name }}</h2>
+
     <div class="row">
-        <div class="col-md-5">
-          <img [src]="data.photo"  width=200px height=200px>
+        <div class="col-md-4">
+          <img [src]="data.photo"  width=300px height=200px>
           <p><strong class="col-md-8">{{ data.painter }}</strong> <em class="col-md-4">{{ data.dateCreate | date }}</em> </p>
         @if(!data.disponibility){
           <!-- produit non disponible -->
@@ -44,7 +44,7 @@
         }
         
         </div>
-        <div width=500px class="col-md-7">
+        <div width=500px class="col-md-8">
           <p><strong>Description:</strong> {{ data.description }}</p>
           <p><strong>Dimensions:</strong> {{ data.width }}m -{{data.height}}m</p>
           <p><strong>Category:</strong> {{ data.category }}</p>
@@ -79,8 +79,3 @@
 </div>
 
 
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button class="btn btn-danger" mat-dialog-close>Cancel</button>
-
-</mat-dialog-actions>

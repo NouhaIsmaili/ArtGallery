@@ -2,13 +2,14 @@ import { ArtTable } from "./art-table";
 
 export class Order {
         constructor(
-            public idOrder: string,
+            public id: string,
             public clientName: string, 
             public clientPhoneNumber: number,
            public clientAdress : string,
-            public ordredProducts: ArtTable [], 
+            public ordredProducts: [{"article":ArtTable ,"qte":number}], 
             public total: number, 
-            public orderDate: Date 
+            public orderDate: Date ,
+            public state:string
         ) {}
     }
     

@@ -1,0 +1,107 @@
+/* Couleurs et styles de base */
+* {
+    font-family: 'Poppins', sans-serif;
+
+   
+}
+
+
+.container {
+     /* margin-left: 0;
+     margin-right: 0px; */
+ /* Supprime les marges par défaut */
+    height: 100vh; /* Définit la hauteur de la fenêtre */
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    background: hsl(218deg 50% 91%);
+   
+}
+
+
+.screen-1 {
+    background: hsl(213deg 85% 97%);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    gap: 1.5em;
+    width: 350px; /* Ajustement de la largeur */
+}
+
+/* .screen-1 .logo {
+    margin-top: -3em;
+} */
+
+/* Champs Email et Password */
+.screen-1 .email,
+.screen-1 .password {
+    background: hsl(0deg 0% 100%);
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    width: 100%; /* Assure une largeur homogène */
+    color: hsl(0deg 0% 30%);
+    margin-bottom: 20px;
+}
+
+.screen-1 .email input,
+.screen-1 .password input {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+}
+
+.screen-1 .email input::placeholder,
+.screen-1 .password input::placeholder {
+    color: hsl(0deg 0% 50%);
+    font-size: 0.9em;
+}
+
+.screen-1 .email ion-icon,
+.screen-1 .password ion-icon {
+    color: hsl(0deg 0% 30%);
+    margin-bottom: -0.2em;
+}
+
+/* Bouton "Login" */
+.screen-1 .login {
+    padding: 1em;
+    width: 100%;
+    background: hsl(233deg 36% 38%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.screen-1 .login:hover {
+    background: hsl(233deg 36% 45%);
+}
+
+/* Footer */
+.screen-1 .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: hsl(0deg 0% 37%);
+    width: 100%;
+}
+
+.screen-1 .footer span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.screen-1 .footer span:hover {
+    color: hsl(233deg 36% 38%);
+}

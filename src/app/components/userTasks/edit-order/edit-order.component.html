@@ -1,0 +1,77 @@
+<h1 class="text-center fs-1 mt-3 mb-2">ORDER</h1>
+<tbody class="container text-center d-flex flex-column  justify-content-center align-items-center">
+    @if(order.length==0){
+    <h1>You haven’t added anything yet</h1>
+
+    }@else{
+
+    <table class="table ">
+        <thead>
+            <tr>
+
+                <th scope="col">Client Data</th>
+                <th scope="col"> Order</th>
+                <th scope="col"> Total</th>
+                <th scope="col"> status</th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(tab of order;track $index){
+            <tr>
+
+                <td class="text-left">
+                    <h4><strong>client:</strong> {{ tab.clientName }}</h4><br>
+                    <p><strong>adress:</strong> {{ tab.clientAdress }}</p><br>
+                    <p><strong>phone Number:</strong> {{ tab.clientPhoneNumber }}</p><br>
+                    <p><em class="col-md-3">{{ tab.orderDate| date }}</em> </p>
+                </td>
+                <td class="d-flex align-content-center align-items-center">
+                    <div class="d-flex flex-column " flex-column>
+
+                    @for(prod of tab.ordredProducts;track $index){
+                        <div class="d-flex">
+                            <img [src]="prod.article.photo" class="col-md-4" width=150px height=150px>
+                            <div class="col-md-8">
+                                <h4><strong> {{ prod.article.name }}</strong></h4>
+                                <p>{{ prod.article.painter }}
+                                    <em class="col-md-3">{{ prod.article.dateCreate | date }}</em>
+                                </p>
+                                <p><strong>Dimensions:</strong> {{ prod.article.width }}m -{{prod.article.height}}m</p>
+                                <p><strong>Category:</strong> {{ prod.article.category }}</p>
+                                <span class="fw-bold fs-7"><strong>quantity:</strong>{{prod.article.quantity}}</span>
+
+                            </div>
+                        </div>
+                        <th>
+                    }
+                    </div>
+                </td>
+
+                <td class="align-content-center align-items-center">
+                    <span class="fw-bold ms-3 fs-5">
+                        {{ tab.total | currency }}
+                    </span>
+                </td>
+                <td class="align-content-center align-items-center">
+                     <button  [ngClass]="{
+                        ' btn btn-danger fs-4': tab.state === 'In Progress',
+                        'btn btn-success fw-bold fs-4': tab.state !== 'complete'
+                      }  " (click)="onStatus(tab.id)">
+                        {{tab.state}}</button>
+                </td>
+
+            </tr>
+            <hr>
+            }
+        </tbody>
+    </table>
+
+
+
+
+
+    }
+
+</tbody>

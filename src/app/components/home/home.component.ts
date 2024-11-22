@@ -4,6 +4,8 @@ import { RouterLink } from '@angular/router';
 import { ArtTable } from '../../model/art-table';
 import { ArtTableService } from '../../services/art-table.service';
 import { ProductComponent } from '../product/product.component';
+import { ApiComponent } from "../api/api.component";
+
 export interface Tile {
   src: string;
   cols: number;
@@ -13,12 +15,13 @@ export interface Tile {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink,ProductComponent, MatGridListModule],
+  imports: [RouterLink, ProductComponent, MatGridListModule, ApiComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
     images: string[] = [
+      'aboutUsPhotos/logoBackground.jpg',
       'aboutUsPhotos/image1.jpeg',
       'aboutUsPhotos/image2.jpeg',
       'aboutUsPhotos/image3.jpg',
@@ -52,7 +55,7 @@ export class HomeComponent implements OnInit {
     startSlider() {
        setInterval(() => {
         this.currentIndex = (this.currentIndex + 1) % this.images.length;
-      }, 2000); 
+      }, 1000); 
     }
 
     tiles: Tile[] = [  
@@ -79,6 +82,7 @@ export class HomeComponent implements OnInit {
         this.currentIndex = this.sortedProducts.length - 1; // Loop to last slide
       }
     }
-  }
-  
 
+
+  
+  }

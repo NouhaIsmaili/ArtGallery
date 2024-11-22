@@ -1,5 +1,5 @@
-<div id="box" (click)="openDialog(tab)">
-  <img [src]=tab.photo>
+<div id="box" >
+  <img [src]=tab.photo [routerLink]="['/product',tab.id]">
   <h2>{{tab.name}}</h2>
   <div class="d-flex justify-content-between">
     @if(!tab.disponibility){
