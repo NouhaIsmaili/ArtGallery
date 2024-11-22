@@ -65,7 +65,7 @@
             "category": "pop_art",
             "description": "Neon colors bring iconic symbols to life in this dynamic piece.",
             "discount": 5,
-            "nbLikes": 18000
+            "nbLikes": 250
           },
           "qte": 1
         }
@@ -95,7 +95,7 @@
             "category": "figuratif",
             "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
             "discount": null,
-            "nbLikes": 18001
+            "nbLikes": 321
           },
           "qte": 1
         }
@@ -252,7 +252,7 @@
       "category": "classique",
       "description": "A self-portrait depicting Van Gogh after his infamous ear injury, reflecting his emotional state.",
       "discount": null,
-      "nbLikes": 40
+      "nbLikes": 400
     },
     {
       "id": "30",
@@ -269,7 +269,7 @@
       "category": "classique",
       "description": "Considered one of the most significant works in modern art, this painting depicts five women in a disjointed, abstract style that challenges traditional representation.",
       "discount": null,
-      "nbLikes": 120
+      "nbLikes": 212
     },
     {
       "id": "31",

@@ -1,0 +1,92 @@
+[33mcommit f846703706a91139c05d01cfb983940929e8ca24[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mnewIslem[m[33m)[m
+Author: =islem <=islemomrani1005@gmail.com>
+Date:   Fri Nov 22 22:32:51 2024 +0100
+
+    ajout pipe personalisé
+
+[33mcommit 83d77a560147f8610c9a595f1e02fa87f5943228[m[33m ([m[1;31morigin/newIslem[m[33m)[m
+Author: =islem <=islemomrani1005@gmail.com>
+Date:   Fri Nov 22 20:48:18 2024 +0100
+
+    ajout
+
+[33mcommit 54289d93c2576dbf6c7e3067ebb64dca70da351f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 80fa3ad 7e0ae16
+Author: NouhaIsmaili <167700052+NouhaIsmaili@users.noreply.github.com>
+Date:   Sun Nov 17 23:29:44 2024 +0100
+
+    Merge pull request #3 from NouhaIsmaili/NouhaBranch
+    
+    Nouha branch
+
+[33mcommit 7e0ae1654c777dfd0002f884d6cfa72a60a67972[m[33m ([m[1;31morigin/NouhaBranch[m[33m)[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Sun Nov 17 23:27:57 2024 +0100
+
+    version avant final-fontOffice-reste-Footer+retouches
+
+[33mcommit e9ec25e991a12bb860f1f3e69b4a99b2a804f03e[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Fri Nov 15 21:34:51 2024 +0100
+
+    comments done
+
+[33mcommit 4df52c817587224e6364b8a6d4ae0cd56164eaf4[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Tue Nov 12 22:46:20 2024 +0100
+
+    prodList almost done + start with infoProdDialog
+
+[33mcommit f3b0b1a42a2d0e42b55869bab3556d667e80c530[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Tue Nov 12 18:02:00 2024 +0100
+
+    changement avant service pull
+
+[33mcommit 80fa3addd0c111d45f651e05aa385fa4aa3c758e[m
+Merge: e9de75d 19d05d1
+Author: NouhaIsmaili <167700052+NouhaIsmaili@users.noreply.github.com>
+Date:   Mon Nov 11 19:06:49 2024 +0100
+
+    Merge pull request #2 from NouhaIsmaili/NouhaBranch
+    
+    2eme commit
+
+[33mcommit 19d05d126172e27449eedb824e44371087731086[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Mon Nov 11 19:05:43 2024 +0100
+
+    2eme commit
+
+[33mcommit e9de75dd5bd16409e4cdded460e59d8ae08f2480[m
+Merge: e1644e3 ca6cabd
+Author: NouhaIsmaili <167700052+NouhaIsmaili@users.noreply.github.com>
+Date:   Mon Nov 11 18:58:23 2024 +0100
+
+    Merge pull request #1 from NouhaIsmaili/NouhaBranch
+    
+    1er commit
+
+[33mcommit ca6cabd0ad181ad9ee171fcb3ed8bb1fd3270053[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Sat Nov 9 19:56:28 2024 +0100
+
+    1er commit
+
+[33mcommit e1644e3393c11dcc914721b0e8689888d0a184f9[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Sat Nov 9 19:01:00 2024 +0100
+
+    start
+
+[33mcommit 5b7d7c2f0e9cdbb589fadfbd2ca3ef6ef488124b[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Sat Nov 9 18:56:29 2024 +0100
+
+    first commit
+
+[33mcommit 6bdbbf7b70836b5a4034553e6c01eb17d0041917[m
+Author: nouha ismaili <nouhasmaili3@gmail.com>
+Date:   Sat Nov 9 18:45:32 2024 +0100
+
+    first commit
