@@ -1,0 +1,39 @@
+  <div class="container">
+    <div class="screen-1">
+        <form [formGroup]="userForm"  (ngSubmit)="onSubmit()" novalidate>
+       
+        <div class="email">
+          
+            <label for="email">Email Address</label>
+            <div class="sec-2">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" placeholder="Username@gmail.com" formControlName="email"/>
+                @if(isValidEmail()){
+                    <div class="alert alert-danger">
+                        email incorrect!
+                        </div>
+                  }
+            </div>
+        </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="password" placeholder="············" class="pas" formControlName="pwd" />
+                @if(isValidPassword())
+                {
+                    <div class="alert alert-danger">
+                        password incorrect !
+                        </div>
+                  }
+                <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+            </div>
+        </div>
+        <button [disabled]="userForm.invalid" class="login" (click)="onSubmit()">Login</button>
+    </form>
+        <div class="footer">
+           
+           <a routerLink="/changePassword">Forgot Password?</a> 
+        </div>
+    </div>
+    </div>

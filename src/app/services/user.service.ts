@@ -1,24 +1,40 @@
-import { Injectable } from '@angular/core';
-import { User } from '../model/user';
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
+import { catchError, map, switchMap } from 'rxjs/operators';
+import { User } from '../model/user';
+
+const URL = 'http://localhost:3000/admin';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  private users: User[] = [
-    new User('AdminArtGallery', 'adminArtGallery@gmail.com', 'artgallery123456'),
-  ];
+  private readonly http: HttpClient = inject(HttpClient);
 
-  authenticate(email: string, password: string): Observable<User | null> {
+  constructor() {}
 
-    const authenticatedUser = this.users.find(
-      u => u.email === email && u.password === password
-    );
-
-    // Retourne un Observable avec l'utilisateur ou null
-    return of(authenticatedUser || null);
+  // Get admin data (email, password)
+  getAdminData(): Observable<User> {
+    return this.http.get<User>(URL);
   }
 
-  constructor() { }
+ 
+ 
+
+  // Update password
+  public updatePassword(email: string, newPassword: string): Observable<User> {
+    return this.http.get<User>(URL).pipe(
+      switchMap((admin) => {
+        if (admin.email === email) {
+          // If the email matches, update the password
+          const updatedAdmin = { ...admin, password: newPassword };
+          return this.http.put<User>(`${URL}/${admin.id}`, updatedAdmin); // PUT request with the updated admin data
+        } else {
+          throw new Error('Email not found');
+        }
+      })
+    );
+  }
+ 
 }

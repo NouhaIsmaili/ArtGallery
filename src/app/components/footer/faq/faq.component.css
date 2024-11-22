@@ -1,0 +1,79 @@
+/* Appliquer la police Times New Roman à toute la page */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px; /* Taille de police plus grande pour tout le texte */
+}
+
+/* Conteneur pour l'image avec texte en superposition */
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 450px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+
+/* Style des listes ordonnées */
+.container ol {
+    list-style: none;
+    counter-reset: list-counter;
+    padding-left: 0;
+}
+
+/* Style pour chaque élément de liste dans <ol> */
+.container ol > li {
+    font-weight: bold; /* Les <li> sont en gras */
+    counter-increment: list-counter; /* Incrémente le compteur */
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 30px;
+    margin-top: 30px;
+    /* Taille plus grande pour les éléments de liste ordonnée */
+}
+
+/* Numéros des <li> de <ol> en cercles */
+.container ol > li::before {
+    content: counter(list-counter); /* Affiche le numéro */
+    background-color: #020c15; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    width: 35px; /* Taille du cercle légèrement augmentée */
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* position: absolute; */
+    left: -50px; /* Décalage à gauche ajusté */
+    top: 0;
+}
+
+/* Style des listes non ordonnées */
+.container ul {
+    list-style: none;
+    padding-left: 0;
+    font-weight: normal; /* Pas de gras pour le texte dans les sous-listes */
+    font-size: 18px; /* Taille légèrement réduite pour les sous-listes */
+}
+
+.container ul > li {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Paragraphes dans les sous-listes */
+.container ul > li p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
