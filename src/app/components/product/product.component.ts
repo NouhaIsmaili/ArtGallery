@@ -5,10 +5,11 @@ import { ArtTable } from '../../model/art-table';
 import { ArtTableService } from '../../services/art-table.service';
 import { MatDialog } from '@angular/material/dialog';
 import { InfoProdComponent } from '../info-prod/info-prod.component';
+import { StarPipe } from '../star.pipe';
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [MatIconModule,CommonModule],
+  imports: [MatIconModule,CommonModule,StarPipe],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

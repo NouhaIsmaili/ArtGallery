@@ -1,6 +1,6 @@
 <div id="box" (click)="openDialog(tab)">
   <img [src]=tab.photo>
-  <h2>{{tab.name}}</h2>
+  <h2>{{tab.name|star:tab.nbLikes}}</h2>
   <div class="d-flex justify-content-between">
     @if(!tab.disponibility){
     <!-- produit non disponible -->

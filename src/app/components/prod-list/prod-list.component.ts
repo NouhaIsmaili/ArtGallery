@@ -4,6 +4,8 @@ import { ArtTableService } from '../../services/art-table.service';
 import { ProductComponent } from '../product/product.component';
 import { FormsModule } from '@angular/forms';
 
+
+
 @Component({
   selector: 'app-prod-list',
   standalone: true,
