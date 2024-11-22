@@ -42,6 +42,7 @@
         }
       ],
       "total": 140,
+
       "orderDate": "2024-11-17T17:07:18.190Z",
       "state": "In Progress"
     },
@@ -245,184 +246,81 @@
       "nbLikes": 350
     },
     {
-      "id": "14",
-      "name": "Henry Ford Hospital (1932)",
-      "photo": "abstrait/Baroni-Victor/imgB2.jpg",
-      "height": 30.5,
-      "width": 38,
-      "painter": "Baroni Victor",
-      "price": 450,
-      "quantity": 1,
-      "disponibility": true,
-      "dateCreate": "1932-01-01T00:00:00Z",
-      "comments": [
+      "id": "a960",
+      "clientName": "islem",
+      "clientPhoneNumber": 25698845,
+      "clientAdress": "manouba",
+      "ordredProducts": [
         {
-          "author": null,
-          "date": null,
-          "message": null
-        },
-        {
-          "author": "nn",
-          "date": null,
-          "message": null
-        },
-        {
-          "author": "Azza",
-          "date": "2024-11-14T21:07:07.052Z",
-          "message": "trop beau"
-        },
-        {
-          "author": "islem",
-          "date": "2024-11-14T21:07:07.052Z",
-          "message": "trop beau"
-        },
-        {
-          "author": "nouha",
-          "date": "2024-11-14T21:07:07.052Z",
-          "message": "amazing"
+          "article": {
+            "id": "59",
+            "name": "Novarino Fabien - Neon Dreams",
+            "photo": "pop-art/Novarino-Fabien/imgN4.jpg",
+            "height": 88,
+            "width": 70,
+            "painter": "Novarino Fabien",
+            "price": 6000,
+            "quantity": 3,
+            "disponibility": true,
+            "dateCreate": "2023",
+            "comments": [
+              "A mesmerizing vision of neon lights and pop culture.",
+              {
+                "author": "Islem Omrani",
+                "date": "2024-11-21T20:17:45.007Z",
+                "message": "hjhbhjbhj"
+              }
+            ],
+            "category": "pop_art",
+            "description": "Neon colors bring iconic symbols to life in this dynamic piece.",
+            "discount": 5,
+            "nbLikes": 18000
+          },
+          "qte": 1
         }
       ],
-      "category": "Abstrait",
-      "description": "In this powerful and intimate painting, Frida Kahlo depicts herself lying naked in Henry Ford Hospital after experiencing a miscarriage. Surrounded by symbols of her loss, including a male fetus and various objects representing her pain, the artwork reflects her emotional turmoil and the physical suffering she endured during her pregnancy.",
-      "discount": null,
-      "nbLikes": 401
+      "total": 5700,
+      "orderDate": "2024-11-21T20:18:02.194Z"
     },
     {
-      "id": "15",
-      "name": "Le Suicide de Dorothy Hale (1939)",
-      "photo": "abstrait/Catrine-Alexandre/imgC2.jpg",
-      "height": 59.7,
-      "width": 49.5,
-      "painter": "Catrine-Alexandre",
-      "price": 800,
-      "quantity": 1,
-      "disponibility": true,
-      "dateCreate": "1939-01-01T00:00:00Z",
-      "comments": [
+      "id": "e61b",
+      "clientName": "fd",
+      "clientPhoneNumber": 52572785,
+      "clientAdress": "ghngghn",
+      "ordredProducts": [
         {
-          "author": "islem",
-          "date": "2024-11-14T20:55:16.351Z",
-          "message": "amazing"
-        },
-        {
-          "author": "Azza",
-          "date": "2024-11-14T20:57:42.279Z",
-          "message": "I love this one!!"
+          "article": {
+            "id": "42",
+            "name": "La Cène",
+            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
+            "height": 460,
+            "width": 880,
+            "painter": "Leger Vincent",
+            "price": null,
+            "quantity": null,
+            "disponibility": true,
+            "dateCreate": "1495-1498",
+            "comments": [],
+            "category": "figuratif",
+            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
+            "discount": null,
+            "nbLikes": 18001
+          },
+          "qte": 1
         }
       ],
-      "category": "Abstrait",
-      "description": "This painting depicts the tragic suicide of Dorothy Hale, illustrating her falling from a window while simultaneously lying on the bloody pavement below. The work serves as a poignant commentary on despair and the struggles faced by women, reflecting Kahlo's own emotional turmoil.",
-      "discount": null,
-      "nbLikes": 40
-    },
+      "total": 0,
+      "orderDate": "2024-11-21T20:22:55.037Z"
+    }
+  ],
+  "admin": [
     {
-      "id": "16",
-      "name": "Autoportrait avec la chevelure défaite (1947)",
-      "photo": "abstrait/Catrine-Alexandre/imgC3.jpg",
-      "height": 60,
-      "width": 50,
-      "painter": "Catrine Alexandre",
-      "price": 700,
-      "quantity": 1,
-      "disponibility": true,
-      "dateCreate": "1947-01-01T00:00:00Z",
-      "comments": [],
-      "category": "Abstrait",
-      "description": "In this self-portrait, Frida Kahlo depicts herself with disheveled hair, symbolizing her emotional turmoil and vulnerability. The painting reflects her struggles with identity and love, showcasing her unique style and deep connection to her Mexican heritage.",
-      "discount": null,
-      "nbLikes": 320
-    },
-    {
-      "id": "17",
-      "name": "La Casa Azul (1931)",
-      "photo": "abstrait/Henson-Cendrine/imgH1.jpg",
-      "height": 50,
-      "width": 50,
-      "painter": "Henson Cendrin ",
-      "price": 450,
-      "quantity": 50,
-      "disponibility": true,
-      "dateCreate": "1931-01-01T00:00:00Z",
-      "comments": [],
-      "category": "Abstrait",
-      "description": "La Casa Azul, or The Blue House, is the birthplace and home of Frida Kahlo. This historic house museum showcases her life, art, and personal belongings, reflecting her deep connection to Mexican culture. The house features vibrant blue walls and a rich collection of folk art, pre-Hispanic pieces, and personal artifacts.",
-      "discount": null,
-      "nbLikes": 50
-    },
-    {
-      "id": "18",
-      "name": "Autoportrait en pleurs (1937)",
-      "photo": "abstrait/Henson-Cendrine/imgH2.jpg",
-      "height": 60,
-      "width": 50,
-      "painter": "Henson Cendrin ",
-      "price": 700,
-      "quantity": 1,
-      "disponibility": true,
-      "dateCreate": "1937-01-01T00:00:00Z",
-      "comments": [
-        {
-          "author": "laura",
-          "date": "2024-11-17T16:48:52.632Z",
-          "message": "trop beau"
-        }
-      ],
-      "category": "Abstrait",
-      "description": "In this poignant self-portrait, Frida Kahlo depicts herself in tears, reflecting her emotional turmoil and struggles with love and identity. The painting captures her raw vulnerability and pain, symbolizing her complex relationship with Diego Rivera and her own physical suffering.",
-      "discount": null,
-      "nbLikes": 30
-    },
-    {
-      "id": "19",
-      "name": "Les Fruits de la Terre (1938)",
-      "photo": "abstrait/Henson-Cendrine/imgH3.jpg",
-      "height": 50,
-      "width": 50,
-      "painter": "Henson Cendrin ",
-      "price": 450,
-      "quantity": 10,
-      "disponibility": true,
-      "dateCreate": "1938-01-01T00:00:00Z",
-      "comments": [],
-      "category": "Abstrait",
-      "description": "Les Fruits de la Terre is a vibrant still life that reflects Frida Kahlo's connection to her Mexican heritage. The painting features an array of colorful fruits, symbolizing fertility and life, juxtaposed with elements that represent her personal struggles and the duality of existence. This work was created shortly before her death and serves as a poignant reflection of her experiences.",
-      "discount": null,
-      "nbLikes": 100
-    },
-    {
-      "id": "20",
-      "name": "La Victoire (1944)",
-      "photo": "abstrait/Henson-Cendrine/imgH4.jpg",
-      "height": 30,
-      "width": 30,
-      "painter": "Henson Cendrin ",
-      "price": 450,
-      "quantity": 2,
-      "disponibility": true,
-      "dateCreate": "1944-01-01T00:00:00Z",
-      "comments": [],
-      "category": "Abstrait",
-      "description": "La Victoire is a powerful expression of Frida Kahlo's resilience in the face of suffering. The painting symbolizes her struggle and triumph over physical and emotional pain, reflecting her complex relationship with identity and femininity. It showcases vibrant colors and elements that represent her personal battles and victories.",
-      "discount": null,
-      "nbLikes": 30
-    },
-    {
-      "id": "21",
-      "name": "La Nuit étoilée",
-      "photo": "classique/Caravage/imgC.jpeg",
-      "height": 73.7,
-      "width": 92.1,
-      "painter": "Caravage",
-      "price": 50,
-      "quantity": 50,
-      "disponibility": true,
-      "dateCreate": "1889-01-01T00:00:00Z",
-      "comments": [],
-      "category": "classique",
-      "description": "A swirling night sky filled with stars over a quiet village, showcasing van Gogh's unique brushwork and emotional intensity.",
-      "discount": null,
-      "nbLikes": 100
-    },
+      "id": "admin",
+      "email": "admin@example.com",
+      "password": "azertyu"
+    }
+  ],
+  "artWork": [
     {
       "id": "22",
       "name": "Les Tournesols",
@@ -855,23 +753,6 @@
       "nbLikes": 10
     },
     {
-      "id": "48",
-      "name": "Madonna Litta (c. 1490)",
-      "photo": "figuratif/Richard-Franklin/imgF1.jpeg",
-      "height": 42,
-      "width": 33,
-      "painter": "Richard Franklin",
-      "price": 500,
-      "quantity": 78,
-      "disponibility": true,
-      "dateCreate": "1490-01-01T00:00:00Z",
-      "comments": [],
-      "category": "figuratif",
-      "description": "Madonna Litta depicts the Virgin Mary breastfeeding the Christ child in a dark interior setting. The painting features significant symbolism, including a goldfinch held by Jesus, representing his impending Passion, and Mary's blue mantle symbolizing the Church. The work has been attributed to Leonardo da Vinci, though some scholars debate the involvement of his pupils.",
-      "discount": null,
-      "nbLikes": 45
-    },
-    {
       "id": "49",
       "name": "Le Baptême du Christ (1472-1475)",
       "photo": "figuratif/Richard-Franklin/imgF2.jpg",
@@ -955,7 +836,12 @@
       "disponibility": false,
       "dateCreate": "2023",
       "comments": [
-        "Reimagining iconic figures through modern lenses."
+        "Reimagining iconic figures through modern lenses.",
+        {
+          "author": "islem",
+          "date": "2024-11-18T18:45:27.806Z",
+          "message": "perfect"
+        }
       ],
       "category": "pop_art",
       "description": "A contemporary reworking of classic pop culture symbols.",
@@ -1090,9 +976,11 @@
       "comments": [
         "A mesmerizing vision of neon lights and pop culture.",
         {
+
           "author": "lala",
           "date": "2024-11-17T23:02:48.692Z",
           "message": "like it"
+
         }
       ],
       "category": "pop_art",

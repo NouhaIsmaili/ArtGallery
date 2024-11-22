@@ -14,6 +14,7 @@ import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { NavBarUserComponent } from './components/userTasks/nav-bar-user/nav-bar-user.component';
 import { authGuard } from './components/userTasks/auth.guard';
 
+
 export const routes: Routes = [        
   {
     path: '',title:'',component:ToolBarComponent,
@@ -26,7 +27,6 @@ export const routes: Routes = [
         { path: '', redirectTo: 'home', pathMatch: 'full' }
       ]
   },
-
   {path: 'pwdChange', component: PwdChangeComponent},
   { path: 'login', component: LoginComponent },
   { path:'user',component:NavBarUserComponent,
