@@ -4,7 +4,6 @@ import { ArtTable } from '../../model/art-table';
 import { CurrencyPipe, DatePipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommentService } from '../../services/comment.service';
 import { ArtTableService } from '../../services/art-table.service';
 import { Comment as ArtComment } from '../../model/comment';
 import { ActivatedRoute } from '@angular/router';
@@ -26,7 +25,6 @@ export class InfoProdComponent implements OnInit {
 
   //formulaire-commentaire
   readonly fb: FormBuilder = inject(FormBuilder)
-  commentService: CommentService = inject(CommentService)
   artTableService: ArtTableService = inject(ArtTableService)
   newComment: ArtComment[] = []
   data!: ArtTable
