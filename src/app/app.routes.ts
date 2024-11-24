@@ -55,5 +55,5 @@ export const routes: Routes = [
     ],canActivate:[authGuard],
    },
    { path: '', redirectTo: '', pathMatch: 'full' },
-  // { path: '**', title: 'Error', component: ErrorComponent },
+   { path: '**', title: 'Error', component: ErrorComponent },
   ];  
