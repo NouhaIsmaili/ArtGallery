@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { ApiService } from '../../services/api.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -24,11 +23,7 @@ async ngOnInit() {
       console.log(this.meme.length)
   this.response=this.meme[Math.floor(Math.random() * this.meme.length)]
   console.log(this.response)
-
     },
-    (err) => console.error(err)
   );
-           
-
 }
 }

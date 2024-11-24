@@ -13,12 +13,6 @@ export class UserService {
   private readonly http: HttpClient = inject(HttpClient);
 
 
-  // user:User={
-  //   "id":"1",
-  //   "email":"gallery@gmail.com",
-  //   "pwd":"123456789"
-
-  // }
 
   getuser():Observable<User>{
 

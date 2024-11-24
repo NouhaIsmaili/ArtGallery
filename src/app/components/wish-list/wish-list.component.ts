@@ -5,13 +5,12 @@ import { OrderService } from '../../services/order.service';
 import { ArtTableService } from '../../services/art-table.service';
 import { Order } from '../../model/order';
 import { RouterLink } from '@angular/router';
-import { EditOrderComponent } from "../userTasks/edit-order/edit-order.component";
 import { ArtTable } from '../../model/art-table';
 
 @Component({
   selector: 'app-wish-list',
   standalone: true,
-  imports: [DatePipe, FormsModule, ReactiveFormsModule, RouterLink, CurrencyPipe, EditOrderComponent],
+  imports: [DatePipe, FormsModule, ReactiveFormsModule, RouterLink, CurrencyPipe],
   templateUrl: './wish-list.component.html',
   styleUrl: './wish-list.component.css'
 })

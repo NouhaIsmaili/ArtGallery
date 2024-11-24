@@ -1,8 +1,7 @@
 import { AsyncPipe, CommonModule, CurrencyPipe, DatePipe } from '@angular/common';
-import { Component, inject, NgModule, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Order } from '../../../model/order';
 import { OrderService } from '../../../services/order.service';
-import { ArtTableService } from '../../../services/art-table.service';
 import { Observable } from 'rxjs';
 
 @Component({

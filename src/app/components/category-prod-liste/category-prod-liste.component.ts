@@ -1,16 +1,15 @@
-import { Component, inject, Input, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Category } from '../../model/category';
 import { ActivatedRoute } from '@angular/router';
 import { ArtTable } from '../../model/art-table';
 import { ArtTableService } from '../../services/art-table.service';
-import { JsonPipe } from '@angular/common';
 import { ProductComponent } from '../product/product.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-category-prod-liste',
   standalone: true,
-  imports: [JsonPipe,ProductComponent,FormsModule],
+  imports: [ProductComponent,FormsModule],
   templateUrl: './category-prod-liste.component.html',
   styleUrl: './category-prod-liste.component.css'
 })

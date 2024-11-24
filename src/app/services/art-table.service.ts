@@ -54,9 +54,6 @@ export class ArtTableService {
     return this.http.patch<ArtTable>(`${URL}/${id}`, { disponibility });
   }
   
-  // updateDisponibility(product: ArtTable): Observable<ArtTable> {
-  //   disponibility:Boolean = product.quantity > 0;
-  //   return this.http.patch<ArtTable>(`${URL}/${product.id}`, { disponibility > 0 });
-  // }
+  
   constructor() { }
 }

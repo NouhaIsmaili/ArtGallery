@@ -1,10 +1,6 @@
 import { Category } from "./category";
 import { Comment } from "./comment";
 export class ArtTable {
-    push(value: any) {
-      throw new Error('Method not implemented.');
-    }
-
     constructor(
         public id:string,
         public name:string,

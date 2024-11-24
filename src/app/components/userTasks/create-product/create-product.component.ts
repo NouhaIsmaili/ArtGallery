@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ArtTable } from '../../../model/art-table';
-import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ArtTableService } from '../../../services/art-table.service';
 import { Category } from '../../edit-table/edit-table.component';
 import { MatIconModule } from '@angular/material/icon';

@@ -3,8 +3,6 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ArtTable } from '../../model/art-table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ArtTableService } from '../../services/art-table.service';
-import { CurrencyPipe, DatePipe } from '@angular/common';
-
 export enum Category {
   abstrait = "Abstrait",
   classique = "classique",
