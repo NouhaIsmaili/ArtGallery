@@ -28,34 +28,30 @@ export const routes: Routes = [
       children:[
         { path: 'wishList',title:'wishList', component: WishListComponent },
         {path: 'home',title:'home', component: HomeComponent },
-        { path:'products/:category', component:CategoryProdListeComponent},
-        { path: 'products', component: ProdListComponent },
-        { path:'product/:id', component:InfoProdComponent},
-        {path: 'Leonard-de-Vinci', component: LeonardDeVinciComponent},
-        {path: 'Albert-Marquet', component: AlbertMarquetComponent},
-        {path: 'Raffin-Christian', component: RaffinChristianComponent},
-        {path: 'Catrine-Alexandre', component: CatrineAlexandreComponent},
-        {path: 'faq', component: FaqComponent},
-        {path:'aboutUs',component:AboutUssComponent},
+        { path:'products/:category',title:"products/:category", component:CategoryProdListeComponent},
+        { path: 'products',title:"products", component: ProdListComponent },
+        { path:'product/:id',title:"product/:id", component:InfoProdComponent},
+        {path: 'Leonard-de-Vinci',title:"Leonard-de-Vinci", component: LeonardDeVinciComponent},
+        {path: 'Albert-Marquet',title:"Albert-Marquet", component: AlbertMarquetComponent},
+        {path: 'Raffin-Christian',title:"Raffin-Christian", component: RaffinChristianComponent},
+        {path: 'Catrine-Alexandre',title:"Catrine-Alexandre", component: CatrineAlexandreComponent},
+        {path: 'faq',title:"faq", component: FaqComponent},
+        {path:'aboutUs',title:"aboutUs",component:AboutUssComponent},
         { path: '', redirectTo: 'home', pathMatch: 'full' },
         { path: '**', title: 'Error', component: ErrorComponent }
-
       ]
   },       
-  {path: 'pwdChange', component: PwdChangeComponent},
-
-
-  { path: 'login', component: LoginComponent },
-  { path:'user',component:NavBarUserComponent,
+  {path: 'pwdChange',title:"product/:id", component: PwdChangeComponent},
+  { path: 'login',title:"product/:id", component: LoginComponent },
+  { path:'user',title:"product/:id",component:NavBarUserComponent,
     children:[
-      { path:'product/:id', component:InfoProdComponent},
-      { path: 'productEdit', component: ProductsEditComponent },
-      { path: 'orderEdit', component: EditOrderComponent },
+      { path:'product/:id',title:"user/product/:id", component:InfoProdComponent},
+      { path: 'productEdit',title:"user/productEdit", component: ProductsEditComponent },
+      { path: 'orderEdit',title:"user/orderEdit/:id", component: EditOrderComponent },
+      {path:'update/:id',title:"user/update/:id",component:UpdateProductComponent },
+      { path: 'addProduct',title:"user/addProduct", component: CreateProductComponent },
       { path: '', redirectTo: 'productEdit', pathMatch: 'full' },
-      {path:'update/:id',component:UpdateProductComponent },
-      { path: 'addProduct', component: CreateProductComponent },
       { path: '**', title: 'Error', component: ErrorComponent }
-
     ],canActivate:[authGuard],
    },
    { path: '', redirectTo: '', pathMatch: 'full' },
