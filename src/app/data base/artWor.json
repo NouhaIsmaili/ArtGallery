@@ -760,7 +760,13 @@
       "quantity": 3,
       "disponibility": true,
       "dateCreate": "2024-11-06",
-      "comments": [],
+      "comments": [
+        {
+          "author": "nada",
+          "date": "2024-11-24T20:30:15.365Z",
+          "message": "<3 <3"
+        }
+      ],
       "category": "figuratif",
       "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
       "discount": 8,
@@ -1095,6 +1101,11 @@
           "author": "nouh",
           "date": "2024-11-24T20:00:20.824Z",
           "message": "j'adore"
+        },
+        {
+          "author": "nada",
+          "date": "2024-11-24T20:23:05.186Z",
+          "message": "<3 <3"
         }
       ],
       "category": "pop_art",

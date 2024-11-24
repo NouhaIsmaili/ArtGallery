@@ -38,12 +38,12 @@ export const routes: Routes = [
         {path: 'faq',title:"faq", component: FaqComponent},
         {path:'aboutUs',title:"aboutUs",component:AboutUssComponent},
         { path: '', redirectTo: 'home', pathMatch: 'full' },
-        { path: '**', title: 'Error', component: ErrorComponent }
+       // { path: '**', title: 'Error', component: ErrorComponent }
       ]
   },       
-  {path: 'pwdChange',title:"product/:id", component: PwdChangeComponent},
-  { path: 'login',title:"product/:id", component: LoginComponent },
-  { path:'user',title:"product/:id",component:NavBarUserComponent,
+  {path: 'pwdChange',title:"pwdChange", component: PwdChangeComponent},
+  { path: 'login',title:"login", component: LoginComponent },
+  { path:'user',title:"user",component:NavBarUserComponent,
     children:[
       { path:'product/:id',title:"user/product/:id", component:InfoProdComponent},
       { path: 'productEdit',title:"user/productEdit", component: ProductsEditComponent },
@@ -51,9 +51,9 @@ export const routes: Routes = [
       {path:'update/:id',title:"user/update/:id",component:UpdateProductComponent },
       { path: 'addProduct',title:"user/addProduct", component: CreateProductComponent },
       { path: '', redirectTo: 'productEdit', pathMatch: 'full' },
-      { path: '**', title: 'Error', component: ErrorComponent }
+      //{ path: '**', title: 'Error', component: ErrorComponent }
     ],canActivate:[authGuard],
    },
    { path: '', redirectTo: '', pathMatch: 'full' },
-   { path: '**', title: 'Error', component: ErrorComponent },
+  // { path: '**', title: 'Error', component: ErrorComponent },
   ];  
