@@ -23,8 +23,8 @@ export class ArtTableService {
   }
   
 
-  addProduct(product: ArtTable): Observable<ArtTable> {
-    return this.http.post<ArtTable>(URL, product);
+  addProduct(product: ArtTable): Observable<ArtTable[]> {
+    return this.http.post<ArtTable[]>(URL, product);
   }
 
   updateProduct(id: string, product: ArtTable): Observable<ArtTable> {
@@ -46,6 +46,14 @@ export class ArtTableService {
   getProductsByCategory(category: Category): Observable<ArtTable[]> {
     return this.http.get<ArtTable[]>(`${URL}?category=${category}`);
   }
+
+  updateqte(id: string, quantity: number): Observable<ArtTable> {
+    return this.http.patch<ArtTable>(`${URL}/${id}`, { quantity });
+  }
+  updatedisp(id: string, disponibility: boolean): Observable<ArtTable> {
+    return this.http.patch<ArtTable>(`${URL}/${id}`, { disponibility });
+  }
+  
   // updateDisponibility(product: ArtTable): Observable<ArtTable> {
   //   disponibility:Boolean = product.quantity > 0;
   //   return this.http.patch<ArtTable>(`${URL}/${product.id}`, { disponibility > 0 });

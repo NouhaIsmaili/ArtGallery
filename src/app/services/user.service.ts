@@ -53,19 +53,6 @@ export class UserService {
  
  
 
-  // Update password
-  public updatePassword(email: string, newPassword: string): Observable<User> {
-    return this.http.get<User>(URL).pipe(
-      switchMap((admin) => {
-        if (admin.email === email) {
-          // If the email matches, update the password
-          const updatedAdmin = { ...admin, password: newPassword };
-          return this.http.put<User>(`${URL}/${admin.id}`, updatedAdmin); // PUT request with the updated admin data
-        } else {
-          throw new Error('Email not found');
-        }
-      })
-    );
-  }
+
  
 }

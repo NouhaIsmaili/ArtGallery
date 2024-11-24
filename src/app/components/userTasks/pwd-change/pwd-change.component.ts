@@ -32,21 +32,38 @@ export class PwdChangeComponent {
   
     this.passwordGroup = this.fb.group({
       OldPassword: ['', [Validators.required, Validators.minLength(6)]],
-      NewPassword: ['', [Validators.required, Validators.minLength(6)]]
+      NewPassword: ['', [Validators.required, Validators.minLength(6)]],
+      confirmPassword:['', [Validators.required, Validators.minLength(6)]]
     });
   }
-  
+
+  isInvalidOldPassword(){
+    return this.passwordGroup.get("OldPassword")?.invalid && this.passwordGroup.get("OldPassword")?.touched ;
+  }  
+  isInvalidNewpwd(){
+    return this.passwordGroup.get("NewPassword")?.invalid && this.passwordGroup.get("NewPassword")?.touched ;
+  }  
+  isInvalidconfirmPassword(){
+    return this.passwordGroup.get("confirmPassword")?.invalid && this.passwordGroup.get("confirmPassword")?.touched ;
+  }
+
+  msg:string=""
   onChange(){
+    this.msg=""
     if(this.passwordGroup.value.OldPassword==this.user.pwd){
-      this.userService.changerPwd(this.passwordGroup.value.NewPassword).subscribe(
-          data=>{
-            console.log(data)
-          this.router.navigate(['/login'])
-          alert("password changed!")
-        }
-      )
+      if(this.passwordGroup.value.confirmPassword==this.passwordGroup.value.NewPassword){
+        this.userService.changerPwd(this.passwordGroup.value.NewPassword).subscribe(
+            data=>{
+              console.log(data)
+            this.router.navigate(['/login'])
+            alert("password changed!")
+          }
+        )
+      }else{
+        this.msg="confirm password incorrect"
+      }
     }else{
-      alert("incorrect password")
+      this.msg="incorrect password"
     }
   }
 }

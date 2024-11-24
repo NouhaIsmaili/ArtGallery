@@ -1,41 +1,46 @@
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="card shadow-lg p-4" style="width: 40rem; border-radius: 15px;">
+        <h2 class="text-center mb-4">Login</h2>
+        <form [formGroup]="userForm" class="needs-validation">
 
-<div class="container">
-    <div class="screen-1">
-        <form [formGroup]="userForm"  >
-       
-        <div class="email">
-          
-            <label for="email">Email Address</label>
-            <div class="sec-2">
-                <input type="email" name="email" placeholder="Username@gmail.com" formControlName="email"/>
-                <!-- @if(isValidEmail()){
-                    <div class="alert alert-danger">
-                        email incorrect!
-                        </div>
-                  } -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <div>
+                    <input type="email" name="email" placeholder="Username@gmail.com" 
+                        formControlName="email" class="form-control-plaintext" />
+                    @if(isValidEmail()){
+                    <div class="alert alert-danger mt-2">
+                        Email invalid!
+                    </div>
+                    }
+                </div>
             </div>
-        </div>
-        <div class="password">
-            <label for="password">Password</label>
-            <div class="sec-2">
-                <input type="password" name="password" placeholder="············" class="pas" formControlName="pwd" />
-                <!-- @if(isValidPassword())
-                {
-                    <div class="alert alert-danger">
-                        password incorrect !
-                        </div>
-                  } -->
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div>
+                    <input type="password" name="password" placeholder="············" 
+                        formControlName="pwd" class="form-control-plaintext" />
+                    @if(isValidpwd()){
+                    <div class="alert alert-danger mt-2">
+                        Password must be at least 6 characters long!
+                    </div>
+                    }
+                </div>
             </div>
+
+            @if(!isValid){
+            <div class="alert alert-danger">
+                Incorrect password or email!
+            </div>
+            }
+
+            <button class="btn btn-success w-100" [disabled]="userForm.invalid" (click)="onSubmit()">Login</button>
+        </form>
+        
+        <div class="d-flex justify-content-between mt-3">
+            <a routerLink="/pwdChange" class="text-decoration-none">Change password</a>
+            <a routerLink="/" class="text-decoration-none">Back</a>
         </div>
-        <button class="login"  (click)="onSubmit()">Login</button>
-    </form>
-    <div class="footer">
-        <a routerLink="/pwdChange">change password</a> 
-     </div>
-      
     </div>
-    </div>
-
-
-
-<button btn btn-success routerLink="/productEdit">products</button>
+</div>

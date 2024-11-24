@@ -1,6 +1,6 @@
 <h1 class="text-center fs-1 mt-3 mb-2">ORDER</h1>
 <tbody class="container text-center d-flex flex-column  justify-content-center align-items-center">
-    @if(order.length==0){
+    @if(! (order$|async)){
     <h1>You haven’t added anything yet</h1>
 
     }@else{
@@ -18,7 +18,7 @@
             </tr>
         </thead>
         <tbody>
-            @for(tab of order;track $index){
+            @for(tab of order$ |async ;track $index){
             <tr>
 
                 <td class="text-left">
@@ -58,7 +58,7 @@
                      <button  [ngClass]="{
                         ' btn btn-danger fs-4': tab.state === 'In Progress',
                         'btn btn-success fw-bold fs-4': tab.state !== 'complete'
-                      }  " (click)="onStatus(tab.id)">
+                      }  " (click)="onStatus(tab)">
                         {{tab.state}}</button>
                 </td>
 

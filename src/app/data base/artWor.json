@@ -3,8 +3,7 @@
     {
       "id": "1",
       "email": "gallery@gmail.com",
-      "pwd": "00112233",
-      "newPwd": "123456"
+      "pwd": "00112233"
     }
   ],
   "order": [
@@ -42,7 +41,6 @@
         }
       ],
       "total": 140,
-
       "orderDate": "2024-11-17T17:07:18.190Z",
       "state": "In Progress"
     },
@@ -183,144 +181,229 @@
   ],
   "artWork": [
     {
-      "id": "11",
       "name": "Les Deux Fridas ",
       "photo": "abstrait/Baroni-Victor/imgB1.jpg",
       "height": 173,
       "width": 173,
       "painter": "Baroni Victor",
       "price": 100,
-      "quantity": 1,
+      "quantity": 25,
       "disponibility": true,
-      "dateCreate": "1939-01-01T00:00:00Z",
+      "dateCreate": "2024-11-05",
       "comments": [
         {
           "author": "nouha",
           "date": "2024-11-14T19:18:56.556Z",
           "message": "amazing"
+        },
+        {
+          "author": "Azza",
+          "date": "2024-11-23T10:11:35.102Z",
+          "message": "trop beau"
         }
       ],
       "category": "Abstrait",
       "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
       "discount": 30,
-      "nbLikes": 302
+      "nbLikes": 302,
+      "id": "11"
     },
     {
-      "id": "12",
-      "name": "La Colonne brisée (1944)",
-      "photo": "abstrait/Catrine-Alexandre/imgC1.jpg",
-      "height": 40,
-      "width": 30.7,
-      "painter": "Catrine-Alexandre",
-      "price": 500,
-      "quantity": 1,
-      "disponibility": true,
-      "dateCreate": "1944-01-01T00:00:00Z",
-      "comments": [
-        {
-          "author": "islem",
-          "date": "2024-11-14T20:54:23.895Z",
-          "message": "trop beau"
-        }
-      ],
-      "category": "Abstrait",
-      "description": "This oil painting depicts Frida Kahlo with a fragmented ionic column representing her spine, which has been injured from a bus accident. The artist's body is adorned with nails, symbolizing her physical and emotional pain, while tears flow down her face, reflecting her suffering.",
-      "discount": null,
-      "nbLikes": 40
-    },
-    {
-      "id": "13",
       "name": "Autoportrait avec collier d'épines et colibri (1940)",
       "photo": "abstrait/Baroni-Victor/imgB3.jpg",
       "height": 61.2,
-      "width": 47,
+      "width": 100,
       "painter": "Baroni Victor",
       "price": 800,
       "quantity": 1,
-      "disponibility": false,
-      "dateCreate": "1940-01-01T00:00:00Z",
+      "disponibility": true,
+      "dateCreate": "2024-11-11",
       "comments": [],
       "category": "Abstrait",
       "description": "This self-portrait features Frida Kahlo adorned with a thorn necklace, symbolizing her pain and suffering. A lifeless hummingbird hangs from the necklace, while a monkey and a black cat accompany her, adding layers of meaning related to love, luck, and personal turmoil.",
       "discount": null,
-      "nbLikes": 350
+      "nbLikes": 350,
+      "id": "13"
     },
     {
-      "id": "a960",
-      "clientName": "islem",
-      "clientPhoneNumber": 25698845,
-      "clientAdress": "manouba",
-      "ordredProducts": [
+      "id": "14",
+      "name": "Henry Ford Hospital (1932)",
+      "photo": "abstrait/Baroni-Victor/imgB2.jpg",
+      "height": 30.5,
+      "width": 38,
+      "painter": "Baroni Victor",
+      "price": 450,
+      "quantity": 2,
+      "disponibility": false,
+      "dateCreate": "1932-01-01T00:00:00Z",
+      "comments": [
         {
-          "article": {
-            "id": "59",
-            "name": "Novarino Fabien - Neon Dreams",
-            "photo": "pop-art/Novarino-Fabien/imgN4.jpg",
-            "height": 88,
-            "width": 70,
-            "painter": "Novarino Fabien",
-            "price": 6000,
-            "quantity": 3,
-            "disponibility": true,
-            "dateCreate": "2023",
-            "comments": [
-              "A mesmerizing vision of neon lights and pop culture.",
-              {
-                "author": "Islem Omrani",
-                "date": "2024-11-21T20:17:45.007Z",
-                "message": "hjhbhjbhj"
-              }
-            ],
-            "category": "pop_art",
-            "description": "Neon colors bring iconic symbols to life in this dynamic piece.",
-            "discount": 5,
-            "nbLikes": 18000
-          },
-          "qte": 1
+          "author": null,
+          "date": null,
+          "message": null
+        },
+        {
+          "author": "nn",
+          "date": null,
+          "message": null
+        },
+        {
+          "author": "Azza",
+          "date": "2024-11-14T21:07:07.052Z",
+          "message": "trop beau"
+        },
+        {
+          "author": "islem",
+          "date": "2024-11-14T21:07:07.052Z",
+          "message": "trop beau"
+        },
+        {
+          "author": "nouha",
+          "date": "2024-11-14T21:07:07.052Z",
+          "message": "amazing"
         }
       ],
-      "total": 5700,
-      "orderDate": "2024-11-21T20:18:02.194Z"
+      "category": "Abstrait",
+      "description": "In this powerful and intimate painting, Frida Kahlo depicts herself lying naked in Henry Ford Hospital after experiencing a miscarriage. Surrounded by symbols of her loss, including a male fetus and various objects representing her pain, the artwork reflects her emotional turmoil and the physical suffering she endured during her pregnancy.",
+      "discount": null,
+      "nbLikes": 401
     },
     {
-      "id": "e61b",
-      "clientName": "fd",
-      "clientPhoneNumber": 52572785,
-      "clientAdress": "ghngghn",
-      "ordredProducts": [
+      "name": "Le Suicide de Dorothy Hale (1939)",
+      "photo": "abstrait/Catrine-Alexandre/imgC2.jpg",
+      "height": 70,
+      "width": 70,
+      "painter": "Catrine-Alexandre",
+      "price": 800,
+      "quantity": 2,
+      "disponibility": true,
+      "dateCreate": "2024-11-12",
+      "comments": [
         {
-          "article": {
-            "id": "42",
-            "name": "La Cène",
-            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
-            "height": 460,
-            "width": 880,
-            "painter": "Leger Vincent",
-            "price": null,
-            "quantity": null,
-            "disponibility": true,
-            "dateCreate": "1495-1498",
-            "comments": [],
-            "category": "figuratif",
-            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
-            "discount": null,
-            "nbLikes": 18001
-          },
-          "qte": 1
+          "author": "islem",
+          "date": "2024-11-14T20:55:16.351Z",
+          "message": "amazing"
+        },
+        {
+          "author": "Azza",
+          "date": "2024-11-14T20:57:42.279Z",
+          "message": "I love this one!!"
         }
       ],
-      "total": 0,
-      "orderDate": "2024-11-21T20:22:55.037Z"
-    }
-  ],
-  "admin": [
+      "category": "Abstrait",
+      "description": "This painting depicts the tragic suicide of Dorothy Hale, illustrating her falling from a window while simultaneously lying on the bloody pavement below. The work serves as a poignant commentary on despair and the struggles faced by women, reflecting Kahlo's own emotional turmoil.",
+      "discount": 50,
+      "nbLikes": 40,
+      "id": "15"
+    },
     {
-      "id": "admin",
-      "email": "admin@example.com",
-      "password": "azertyu"
-    }
-  ],
-  "artWork": [
+      "name": "Autoportrait avec la chevelure défaite (1947)",
+      "photo": "abstrait/Catrine-Alexandre/imgC3.jpg",
+      "height": 60,
+      "width": 80,
+      "painter": "Catrine Alexandre",
+      "price": 700,
+      "quantity": 2,
+      "disponibility": true,
+      "dateCreate": "2024-11-13",
+      "comments": [],
+      "category": "Abstrait",
+      "description": "In this self-portrait, Frida Kahlo depicts herself with disheveled hair, symbolizing her emotional turmoil and vulnerability. The painting reflects her struggles with identity and love, showcasing her unique style and deep connection to her Mexican heritage.",
+      "discount": null,
+      "nbLikes": 320,
+      "id": "16"
+    },
+    {
+      "id": "17",
+      "name": "La Casa Azul (1931)",
+      "photo": "abstrait/Henson-Cendrine/imgH1.jpg",
+      "height": 50,
+      "width": 50,
+      "painter": "Henson Cendrin ",
+      "price": 450,
+      "quantity": 50,
+      "disponibility": true,
+      "dateCreate": "1931-01-01T00:00:00Z",
+      "comments": [],
+      "category": "Abstrait",
+      "description": "La Casa Azul, or The Blue House, is the birthplace and home of Frida Kahlo. This historic house museum showcases her life, art, and personal belongings, reflecting her deep connection to Mexican culture. The house features vibrant blue walls and a rich collection of folk art, pre-Hispanic pieces, and personal artifacts.",
+      "discount": null,
+      "nbLikes": 50
+    },
+    {
+      "name": "Autoportrait en pleurs (1937)",
+      "photo": "abstrait/Henson-Cendrine/imgH2.jpg",
+      "height": 60,
+      "width": 80,
+      "painter": "Henson Cendrin ",
+      "price": 700,
+      "quantity": 0,
+      "disponibility": false,
+      "dateCreate": "2024-11-14",
+      "comments": [
+        {
+          "author": "laura",
+          "date": "2024-11-17T16:48:52.632Z",
+          "message": "trop beau"
+        }
+      ],
+      "category": "Abstrait",
+      "description": "In this poignant self-portrait, Frida Kahlo depicts herself in tears, reflecting her emotional turmoil and struggles with love and identity. The painting captures her raw vulnerability and pain, symbolizing her complex relationship with Diego Rivera and her own physical suffering.",
+      "discount": null,
+      "nbLikes": 30,
+      "id": "18"
+    },
+    {
+      "id": "19",
+      "name": "Les Fruits de la Terre (1938)",
+      "photo": "abstrait/Henson-Cendrine/imgH3.jpg",
+      "height": 50,
+      "width": 50,
+      "painter": "Henson Cendrin ",
+      "price": 450,
+      "quantity": 10,
+      "disponibility": true,
+      "dateCreate": "1938-01-01T00:00:00Z",
+      "comments": [],
+      "category": "Abstrait",
+      "description": "Les Fruits de la Terre is a vibrant still life that reflects Frida Kahlo's connection to her Mexican heritage. The painting features an array of colorful fruits, symbolizing fertility and life, juxtaposed with elements that represent her personal struggles and the duality of existence. This work was created shortly before her death and serves as a poignant reflection of her experiences.",
+      "discount": null,
+      "nbLikes": 100
+    },
+    {
+      "name": "La Victoire (1944)",
+      "photo": "abstrait/Henson-Cendrine/imgH4.jpg",
+      "height": 60,
+      "width": 60,
+      "painter": "Henson Cendrin ",
+      "price": 450,
+      "quantity": 40,
+      "disponibility": true,
+      "dateCreate": "2024-11-16",
+      "comments": [],
+      "category": "Abstrait",
+      "description": "La Victoire is a powerful expression of Frida Kahlo's resilience in the face of suffering. The painting symbolizes her struggle and triumph over physical and emotional pain, reflecting her complex relationship with identity and femininity. It showcases vibrant colors and elements that represent her personal battles and victories.",
+      "discount": null,
+      "nbLikes": 30,
+      "id": "20"
+    },
+    {
+      "id": "21",
+      "name": "La Nuit étoilée",
+      "photo": "classique/Caravage/imgC.jpeg",
+      "height": 73.7,
+      "width": 92.1,
+      "painter": "Caravage",
+      "price": 50,
+      "quantity": 50,
+      "disponibility": true,
+      "dateCreate": "1889-01-01T00:00:00Z",
+      "comments": [],
+      "category": "classique",
+      "description": "A swirling night sky filled with stars over a quiet village, showcasing van Gogh's unique brushwork and emotional intensity.",
+      "discount": null,
+      "nbLikes": 100
+    },
     {
       "id": "22",
       "name": "Les Tournesols",
@@ -363,7 +446,7 @@
       "width": 32.5,
       "painter": "Leonard-de-Vinci",
       "price": 60,
-      "quantity": 40,
+      "quantity": 43,
       "disponibility": true,
       "dateCreate": "1889-01-01T00:00:00Z",
       "comments": [],
@@ -397,7 +480,7 @@
       "width": 92.1,
       "painter": "Leonard-de-Vinci",
       "price": 70,
-      "quantity": 7,
+      "quantity": 20,
       "disponibility": true,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
@@ -424,21 +507,21 @@
       "nbLikes": 70
     },
     {
-      "id": "28",
       "name": "Filles de joie",
       "photo": "classique/Titien/imgT1.jpg",
       "height": 60,
       "width": 40,
       "painter": "Titien",
       "price": 80,
-      "quantity": 30,
-      "displayable": true,
+      "quantity": 36,
+      "disponibility": true,
       "dateCreate": "1888-01-01T00:00:00Z",
       "comments": [],
       "category": "classique",
       "description": "An exploration of the lives of women in Arles, capturing their essence through vibrant colors and emotional depth.",
       "discount": null,
-      "nbLikes": 35
+      "nbLikes": 35,
+      "id": "28"
     },
     {
       "id": "29",
@@ -448,7 +531,7 @@
       "width": 50,
       "painter": "Titien",
       "price": 150,
-      "quantity": 70,
+      "quantity": 84,
       "disponibility": true,
       "dateCreate": "1889-01-01T00:00:00Z",
       "comments": [
@@ -505,7 +588,7 @@
       "width": 776,
       "painter": "Albert Marquet",
       "price": 45,
-      "quantity": 50,
+      "quantity": 52,
       "disponibility": true,
       "dateCreate": "1937-01-01T00:00:00Z",
       "comments": [],
@@ -522,7 +605,7 @@
       "width": 129.5,
       "painter": "Albert Marquet",
       "price": 40,
-      "quantity": 5,
+      "quantity": 15,
       "disponibility": true,
       "dateCreate": "1903-01-01T00:00:00Z",
       "comments": [],
@@ -532,225 +615,259 @@
       "nbLikes": 80
     },
     {
-      "id": "34",
       "name": "Le Vieil Guitariste",
       "photo": "Fauve/Henri-Matisse/imgHM1.jpg",
       "height": 122.6,
       "width": 82.6,
       "painter": "Henri Matisse",
-      "price": null,
-      "quantity": null,
-      "disponibility": true,
-      "dateCreate": "1903-01-01T00:00:00Z",
+      "price": 500,
+      "quantity": 0,
+      "disponibility": false,
+      "dateCreate": "2024-11-21",
       "comments": [],
       "category": "Fauve",
       "description": "This poignant work depicts an old blind guitarist, representing poverty and despair during Picasso's Blue Period.",
-      "discount": null,
-      "nbLikes": 6000
+      "discount": 20,
+      "nbLikes": 6000,
+      "id": "34"
     },
     {
-      "id": "35",
       "name": "Femme au chapeau",
       "photo": "Fauve/Henri-Matisse/imgHM2.jpg",
       "height": 81.3,
       "width": 60.3,
       "painter": "Henri Matisse",
-      "price": null,
-      "quantity": null,
+      "price": 80,
+      "quantity": 60,
       "disponibility": true,
-      "dateCreate": "1905-01-01T00:00:00Z",
+      "dateCreate": "2024-11-04",
       "comments": [],
       "category": "Fauve",
       "description": "A vibrant portrait of Picasso's muse, Gertrude Stein, showcasing bold colors and expressive brushwork characteristic of Fauvism.",
-      "discount": null,
-      "nbLikes": 7000
+      "discount": 5,
+      "nbLikes": 7000,
+      "id": "35"
     },
     {
-      "id": "36",
       "name": "Les Trois Musiciens",
       "photo": "Fauve/Henri-Matisse/imgHM3.jpg",
       "height": 200,
       "width": 220,
       "painter": "Henri Matisse",
-      "price": null,
-      "quantity": null,
-      "disponibility": true,
-      "dateCreate": "1921-01-01T00:00:00Z",
+      "price": 100,
+      "quantity": 0,
+      "disponibility": false,
+      "dateCreate": "2024-05-06",
       "comments": [],
       "category": "Fauve",
       "description": "A large-scale composition depicting three musicians in a cubist style, emphasizing geometric shapes and flat planes.",
-      "discount": null,
-      "nbLikes": 9000
+      "discount": 10,
+      "nbLikes": 9000,
+      "id": "36"
     },
     {
-      "id": "37",
       "name": "La Guerre et la Paix",
       "photo": "Fauve/Henri-Matisse/imgHM4.jpeg",
       "height": 250,
       "width": 300,
       "painter": "Henri Matisse",
-      "price": null,
-      "quantity": null,
+      "price": 100,
+      "quantity": 10,
       "disponibility": true,
-      "dateCreate": "1952-01-01T00:00:00Z",
+      "dateCreate": "2024-11-06",
       "comments": [],
       "category": "Fauve",
       "description": "A monumental mural symbolizing the contrast between war and peace through vivid imagery and powerful symbolism.",
-      "discount": null,
-      "nbLikes": 11000
+      "discount": 10,
+      "nbLikes": 11000,
+      "id": "37"
     },
     {
-      "id": "38",
       "name": "L'Atelier",
       "photo": "Fauve/Raoul-Dufy/imgRD1.jpg",
       "height": 200,
       "width": 150,
       "painter": "Raoul Dufy",
-      "price": null,
-      "quantity": null,
+      "price": 90,
+      "quantity": 30,
       "disponibility": true,
-      "dateCreate": "1938-01-01T00:00:00Z",
+      "dateCreate": "2024-11-21",
       "comments": [],
       "category": "Fauve",
       "description": "An introspective look into Picasso's creative space, filled with symbolic references to his artistic journey.",
-      "discount": null,
-      "nbLikes": 5000
+      "discount": 10,
+      "nbLikes": 5000,
+      "id": "38"
     },
     {
-      "id": "39",
       "name": "La Maternité",
       "photo": "Fauve/Raoul-Dufy/imgRD2.jpg",
       "height": 100,
       "width": 73,
       "painter": "Raoul Dufy",
-      "price": null,
-      "quantity": null,
+      "price": 77,
+      "quantity": 77,
       "disponibility": true,
-      "dateCreate": "1901-01-01T00:00:00Z",
+      "dateCreate": "2024-11-18",
       "comments": [],
       "category": "Fauve",
       "description": "A tender portrayal of motherhood reflecting love and care during Picasso's early artistic exploration.",
-      "discount": null,
-      "nbLikes": 4000
+      "discount": 7,
+      "nbLikes": 4000,
+      "id": "39"
     },
     {
-      "id": "40",
       "name": "Nude, Green Leaves and Bust",
       "photo": "Fauve/Raoul-Dufy/imgRD3.jpg",
       "height": 162.3,
       "width": 130.2,
       "painter": "Raoul Dufy",
-      "price": null,
-      "quantity": null,
-      "disponibility": true,
-      "dateCreate": "1932-01-01T00:00:00Z",
+      "price": 89.5,
+      "quantity": 0,
+      "disponibility": false,
+      "dateCreate": "2024-11-19",
       "comments": [],
       "category": "Fauve",
       "description": "An intimate depiction of a nude woman alongside a bust sculpture, showcasing Picasso's exploration of form and color.",
-      "discount": null,
-      "nbLikes": 8000
+      "discount": 0,
+      "nbLikes": 8000,
+      "id": "40"
     },
     {
-      "id": "42",
+      "name": "La Joconde (Mona Lisa)",
+      "photo": "figuratif/Leger-Vincent/imgL1.jpg",
+      "height": 77,
+      "width": 80,
+      "painter": "Leger Vincent",
+      "price": 150,
+      "quantity": 50,
+      "disponibility": true,
+      "dateCreate": "2024-11-18",
+      "comments": [],
+      "category": "figuratif",
+      "description": "La Joconde, also known as Mona Lisa, is one of the most famous paintings in the world, depicting Lisa Gherardini with an enigmatic expression. The painting is renowned for its sophisticated use of sfumato and atmospheric perspective.",
+      "discount": 15,
+      "nbLikes": 20000,
+      "id": "41"
+    },
+    {
       "name": "La Cène",
       "photo": "figuratif/Leger-Vincent/imgL2.jpg",
-      "height": 460,
-      "width": 880,
+      "height": 65,
+      "width": 88,
       "painter": "Leger Vincent",
-      "price": null,
-      "quantity": null,
+      "price": 90,
+      "quantity": 3,
       "disponibility": true,
-      "dateCreate": "1495-1498",
+      "dateCreate": "2024-11-06",
       "comments": [],
       "category": "figuratif",
       "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
-      "discount": null,
-      "nbLikes": 18002
+      "discount": 8,
+      "nbLikes": 18002,
+      "id": "42"
     },
     {
-      "id": "43",
       "name": "L'Homme de Vitruve",
       "photo": "figuratif/Leger-Vincent/imgL3.jpg",
-      "height": 34.4,
-      "width": 24.5,
+      "height": 70,
+      "width": 70,
       "painter": "Leger Vincent",
-      "price": null,
-      "quantity": null,
+      "price": 40,
+      "quantity": 8,
       "disponibility": true,
-      "dateCreate": "1490-01-01T00:00:00Z",
+      "dateCreate": "2024-11-05",
       "comments": [],
       "category": "figuratif",
       "description": "A drawing that illustrates the proportions of the human body according to Vitruvius, symbolizing the blend of art and science during the Renaissance.",
-      "discount": null,
-      "nbLikes": 12000
+      "discount": 0,
+      "nbLikes": 12000,
+      "id": "43"
     },
     {
-      "id": "44",
       "name": "L'Annonciation",
       "photo": "figuratif/Leger-Vincent/imgL4.jpg",
       "height": 98.5,
       "width": 217.5,
       "painter": "Leger Vincent",
-      "price": null,
-      "quantity": null,
+      "price": 200,
+      "quantity": 9,
       "disponibility": true,
-      "dateCreate": "1472-1475",
+      "dateCreate": "2024-11-18",
       "comments": [],
       "category": "figuratif",
       "description": "This early work depicts the Annunciation of the Virgin Mary by the Angel Gabriel, showcasing Leonardo's mastery of light and shadow.",
-      "discount": null,
-      "nbLikes": 9000
+      "discount": 40,
+      "nbLikes": 9000,
+      "id": "44"
     },
     {
-      "id": "45",
       "name": "La Vierge aux rochers",
       "photo": "figuratif/Raffin-Christian/imgR1.jpg",
       "height": 199,
       "width": 123,
       "painter": "Raffin Christian",
-      "price": null,
-      "quantity": null,
+      "price": 400,
+      "quantity": 50,
       "disponibility": true,
-      "dateCreate": "1483-1486",
+      "dateCreate": "2024-11-13",
       "comments": [],
       "category": "figuratif",
       "description": "A masterpiece depicting the Virgin Mary with the Christ Child and John the Baptist in a rocky landscape, illustrating Leonardo's innovative use of composition.",
-      "discount": null,
-      "nbLikes": 11000
+      "discount": 30,
+      "nbLikes": 11000,
+      "id": "45"
     },
     {
-      "id": "46",
       "name": "La Vierge et l'Enfant avec sainte Anne",
       "photo": "figuratif/Raffin-Christian/imgR2.jpg",
       "height": 168,
       "width": 130,
       "painter": "Raffin Christian",
-      "price": null,
-      "quantity": null,
+      "price": 100,
+      "quantity": 12,
       "disponibility": true,
       "dateCreate": "1503-1519",
       "comments": [],
       "category": "figuratif",
       "description": "This painting shows Saint Anne with the Virgin Mary and the Christ Child, emphasizing familial bonds and maternal love.",
-      "discount": null,
-      "nbLikes": 13000
+      "discount": 0,
+      "nbLikes": 13000,
+      "id": "46"
     },
     {
-      "id": "47",
       "name": "Saint Jean Baptiste",
       "photo": "figuratif/Raffin-Christian/imgR3.jpg",
       "height": 69,
       "width": 57,
       "painter": "Raffin Christian",
-      "price": null,
-      "quantity": null,
+      "price": 100,
+      "quantity": 0,
       "disponibility": true,
       "dateCreate": "1513-1516",
       "comments": [],
       "category": "figuratif",
       "description": "A late masterpiece depicting Saint John the Baptist in a dark background with a gesture that suggests both mystery and invitation.",
+      "discount": 0,
+      "nbLikes": 10,
+      "id": "47"
+    },
+    {
+      "id": "48",
+      "name": "Madonna Litta (c. 1490)",
+      "photo": "figuratif/Richard-Franklin/imgF1.jpeg",
+      "height": 42,
+      "width": 33,
+      "painter": "Richard Franklin",
+      "price": 500,
+      "quantity": 78,
+      "disponibility": true,
+      "dateCreate": "1490-01-01T00:00:00Z",
+      "comments": [],
+      "category": "figuratif",
+      "description": "Madonna Litta depicts the Virgin Mary breastfeeding the Christ child in a dark interior setting. The painting features significant symbolism, including a goldfinch held by Jesus, representing his impending Passion, and Mary's blue mantle symbolizing the Church. The work has been attributed to Leonardo da Vinci, though some scholars debate the involvement of his pupils.",
       "discount": null,
-      "nbLikes": 10
+      "nbLikes": 45
     },
     {
       "id": "49",
@@ -794,7 +911,7 @@
       "width": 60,
       "painter": "Cmon",
       "price": 3500,
-      "quantity": 5,
+      "quantity": 6,
       "disponibility": true,
       "dateCreate": "2020",
       "comments": [
@@ -836,12 +953,7 @@
       "disponibility": false,
       "dateCreate": "2023",
       "comments": [
-        "Reimagining iconic figures through modern lenses.",
-        {
-          "author": "islem",
-          "date": "2024-11-18T18:45:27.806Z",
-          "message": "perfect"
-        }
+        "Reimagining iconic figures through modern lenses."
       ],
       "category": "pop_art",
       "description": "A contemporary reworking of classic pop culture symbols.",
@@ -856,7 +968,7 @@
       "width": 58,
       "painter": "Marie G",
       "price": 2800,
-      "quantity": 10,
+      "quantity": 11,
       "disponibility": true,
       "dateCreate": "2019",
       "comments": [
@@ -963,30 +1075,28 @@
       "nbLikes": 15000
     },
     {
-      "id": "59",
       "name": "Novarino Fabien - Neon Dreams",
       "photo": "pop-art/Novarino-Fabien/imgN4.jpg",
       "height": 88,
       "width": 70,
       "painter": "Novarino Fabien",
       "price": 6000,
-      "quantity": 3,
+      "quantity": 4,
       "disponibility": true,
-      "dateCreate": "2023",
+      "dateCreate": "2024-11-13",
       "comments": [
         "A mesmerizing vision of neon lights and pop culture.",
         {
-
           "author": "lala",
           "date": "2024-11-17T23:02:48.692Z",
           "message": "like it"
-
         }
       ],
       "category": "pop_art",
       "description": "Neon colors bring iconic symbols to life in this dynamic piece.",
       "discount": 5,
-      "nbLikes": 18001
+      "nbLikes": 18001,
+      "id": "59"
     }
   ]
 }

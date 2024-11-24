@@ -3,16 +3,18 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
-import { ProdListComponent } from '../prod-list/prod-list.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { Category } from '../../model/category';
+
 @Component({
   selector: 'app-tool-bar',
   standalone: true,
-  imports: [MatToolbarModule, HomeComponent,ProdListComponent,RouterOutlet,MatButtonModule,RouterLink, MatIconModule],
+  imports: [MatToolbarModule,MatTabsModule,RouterLink,RouterOutlet,MatButtonModule, MatIconModule],
   templateUrl: './tool-bar.component.html',
   styleUrl: './tool-bar.component.css'
 })
 export class ToolBarComponent {
+  category = Object.values(Category)
 
 
 }

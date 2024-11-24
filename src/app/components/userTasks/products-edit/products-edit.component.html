@@ -33,13 +33,9 @@
             <th scope="col">Product</th>
            
             <th scope="col">price</th>
-            <!-- b discount b kol chy -->
             <th scope="col"> quantity</th>
-            <!-- lenna famma test si disponile w fih qte snn y9ollou indisponible -->
             <th scope="col"> deleta</th>
             <th scope="col"> update</th>
-            <!-- <th scope="col"> details</th> -->
-            <!-- bech y3ayet ll lokhrin -->
 
             <th></th>
           </tr>
@@ -48,7 +44,10 @@
             @for(tab of filteredProducts;track $index){
           <tr>
             <td class="d-flex align-content-center align-items-center">
-                <img [src]="tab.photo" class="col-md-4" width=150px height=150px>
+                <div class="col-md-4">    
+                  <img [src]="tab.photo" [routerLink]="['/user/product',tab.id]"  width=150px height=150px>
+                  <p>id : {{tab.id}}  {{tab.name|star:tab.nbLikes}}</p>
+                </div>
                 <div class="col-md-8">
                     <h4><strong> {{ tab.name }}</strong></h4>
                     <p >{{ tab.painter }}
@@ -98,7 +97,7 @@
               </button>
             </td>
             <td class="align-content-center align-items-center">
-              <button class="btn btn-success" >
+              <button class="btn btn-success" [routerLink]="['/user/update',tab.id]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                   <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                   <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>

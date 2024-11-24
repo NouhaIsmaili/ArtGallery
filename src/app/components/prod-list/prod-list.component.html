@@ -24,9 +24,10 @@
 @if(filteredProducts.length==0){
     <h1 class="text-center fs-1 mt-3 mb-2">SORRY! PRODUCTS NOT FOUND :( </h1>
 
-}
+}@else{
     <div class="d-flex flex-wrap">
         @for(tab of filteredProducts;track $index){
              <app-product  [tab]="tab"></app-product> 
          }
      </div>
+    }

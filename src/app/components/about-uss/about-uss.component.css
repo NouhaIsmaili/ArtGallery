@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+#about-us {
+    padding: 40px 0;
+}
+ 
+#team .card {
+    border: none;
+    transition: transform 0.3s;
+    min-height: 100%; 
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 230px; /* Set the card's max-width */
+    height: 300px; /* Set a fixed height for the card */
+    margin-bottom: 20px; /* Add some space between cards */
+}
+#team .card img {
+    height: 200px; /* Reduce the image height to make it smaller */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+ 
+#team .card:hover {
+    transform: translateY(-10px);
+}
+#team .col-md-4 {
+    flex: 0 0 30%; /* Set the width of the card column to 30% for smaller cards */
+    max-width: 30%; /* Max width of 30% to ensure the card size is smaller */
+    margin: 0 auto; /* Center the cards */
+}
+
+

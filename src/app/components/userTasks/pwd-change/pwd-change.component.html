@@ -1,36 +1,59 @@
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="card shadow-lg p-4" style="width: 40rem; border-radius: 15px;">
+        <h2 class="text-center mb-4">Change Password</h2>
+        <form id="changePasswordForm" [formGroup]="passwordGroup" class="needs-validation">
 
-  <!-- if ecrir wrong pwd changer mot de passe   -->
-  <div class="container">
-    <div class="screen-1">
-        <form id="changePasswordForm" [formGroup]="passwordGroup">
-       
-        <div class="email">
-          
-            <label for="email">old password</label>
-            <div class="sec-2">
-                <input type="password" name="password" placeholder="Enter old password" formControlName="OldPassword"/>
-                <!-- @if(isInValidNewpwd()) {
+            <div class="mb-3">
+                <label for="email" class="form-label">Old Password</label>
+                <div>
+                    <input type="password" name="password" placeholder="............" 
+                        formControlName="OldPassword" class="form-control-plaintext" />
+                    @if(isInvalidOldPassword()) {
                     <div class="alert alert-danger mt-2">
                         Password must be at least 6 characters long!
                     </div>
-                } -->
+                    }
+                </div>
             </div>
-        </div>
-        <div class="password">
-            <label for="password">new password</label>
-            <div class="sec-2">
-                <input type="password" name="password"placeholder="new password" formControlName="NewPassword" />
-                <!-- @if(isInValidConfirmpwd()) {
+
+            <div class="mb-3">
+                <label for="password" class="form-label">New Password</label>
+                <div>
+                    <input type="password" name="password" placeholder="............." 
+                        formControlName="NewPassword" class="form-control-plaintext" />
+                    @if(isInvalidNewpwd()) {
                     <div class="alert alert-danger mt-2">
                         Password must be at least 6 characters long!
                     </div>
-                } -->
+                    }
+                </div>
             </div>
-        </div>
-        <button [disabled]="passwordGroup.invalid" type="submit"  class="login" (click)="onChange()">Save</button>
-    </form>
-        <div class="footer">
-           <a routerLink="/login">Login</a> 
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Confirm Password</label>
+                <div>
+                    <input type="password" name="password" placeholder=".............." 
+                        formControlName="confirmPassword" class="form-control-plaintext" />
+                    @if(isInvalidconfirmPassword()) {
+                    <div class="alert alert-danger mt-2">
+                        Password must be at least 6 characters long!
+                    </div>
+                    }
+                </div>
+            </div>
+
+            @if(msg)
+            {
+            <div class="alert alert-danger">
+                {{msg}}
+            </div>
+            }
+            <button type="submit" [disabled]="passwordGroup.invalid" 
+                class="btn btn-success w-100" (click)="onChange()">Save</button>
+        </form>
+        <div class="d-flex justify-content-between mt-3">
+            <a routerLink="/login" class="text-decoration-none">Login</a>
+            <a routerLink="/" class="text-decoration-none">Back</a>
         </div>
     </div>
-    </div>
+</div>

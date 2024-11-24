@@ -1,35 +1,34 @@
-import { JsonPipe } from '@angular/common';
-import { HttpClient,HttpHeaders } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ApiService } from '../../services/api.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-api',
   standalone: true,
-  imports: [JsonPipe],
+  imports: [],
   templateUrl: './api.component.html',
   styleUrl: './api.component.css'
 })
 export class ApiComponent {
   response: any;
+  http:HttpClient=inject(HttpClient)
+  meme:any[]=[]
+  
+async ngOnInit() {
+  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  const apiUrl = 'https://www.wikiart.org/en/App/Painting/PaintingsByArtist?artistUrl=fernand-leger&json=2';
+  this.http.get(proxyUrl + apiUrl).subscribe(
+    (res: any) => {
+      console.log(res);
+      this.meme=res;
+      console.log(this.meme.length)
+  this.response=this.meme[Math.floor(Math.random() * this.meme.length)]
+  console.log(this.response)
 
-  constructor(private http: HttpClient) {}
+    },
+    (err) => console.error(err)
+  );
+           
 
-  searchSpotify() {
-    const url =
-    'https://spotify23.p.rapidapi.com/search/?type=multi&offset=0&limit=10&numberOfTopResults=5'
-    const headers = new HttpHeaders({
-      'x-rapidapi-key': 'x-rapidapi-host', // Replace with your actual key
-      'x-rapidapi-host': 'spotify23.p.rapidapi.com',
-    });
-
-    this.http.get(url, { headers }).subscribe({
-      next: (data) => {
-        console.log('API Response:', data);
-        this.response = data;
-      },
-      error: (err) => {
-        console.error('API Error:', err);
-      },
-    });
-  }
+}
 }

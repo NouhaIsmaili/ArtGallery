@@ -3,11 +3,13 @@ import { ArtTable } from '../../../model/art-table';
 import { ArtTableService } from '../../../services/art-table.service';
 import { CurrencyPipe, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { StarPipe } from "../../../pipe/star.pipe";
 
 @Component({
   selector: 'app-products-edit',
   standalone: true,
-  imports: [CurrencyPipe,DatePipe,FormsModule],
+  imports: [CurrencyPipe, DatePipe, FormsModule, RouterLink, StarPipe],
   templateUrl: './products-edit.component.html',
   styleUrl: './products-edit.component.css'
 })
@@ -23,6 +25,9 @@ export class ProductsEditComponent  implements OnInit{
   searchTerm: string = '';
   maxPrice?: number;
   minPrice?: number;
+
+
+
   ngOnInit(): void {
     this.ArtTableService.getProducts().subscribe(
       data=>{this.liste=data
@@ -31,10 +36,13 @@ export class ProductsEditComponent  implements OnInit{
     )
   }
 
+
   delete(id:string){
     this.ArtTableService.deleteProduct(id).subscribe(
-      data=>console.log(data)
-    )
+      data=>{console.log(data)
+      this.liste = this.liste.filter(product => product.id !== id);
+      this.filteredProducts = this.filteredProducts.filter(product => product.id !== id);
+  })
   }
 
   searchProducts(): void {
@@ -43,12 +51,16 @@ export class ProductsEditComponent  implements OnInit{
     if(this.maxPrice || this.minPrice){
       this.filteredProducts = this.bindingprice.filter(product =>
         product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        product.category.toLowerCase().includes(this.searchTerm.toLowerCase())
+        product.category.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+        product.id.toLowerCase().includes(this.searchTerm.toLowerCase()) 
+
       );
     }else{
       this.filteredProducts = this.liste.filter(product =>
         product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        product.category.toLowerCase().includes(this.searchTerm.toLowerCase())
+        product.category.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+        product.id.toLowerCase().includes(this.searchTerm.toLowerCase()) 
+
       );
     }
     this.bindingname=this.filteredProducts

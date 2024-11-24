@@ -6,10 +6,11 @@ import { ArtTableService } from '../../services/art-table.service';
 import { MatDialog } from '@angular/material/dialog';
 import { InfoProdComponent } from '../info-prod/info-prod.component';
 import { RouterLink } from '@angular/router';
+import { StarPipe } from '../../pipe/star.pipe';
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [MatIconModule,CommonModule,RouterLink],
+  imports: [MatIconModule,CommonModule,RouterLink,StarPipe],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

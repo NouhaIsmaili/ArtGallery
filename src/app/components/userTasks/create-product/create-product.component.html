@@ -1,0 +1,106 @@
+<div class="container d-flex justify-content-center align-items-center mt-5">
+  <div class="card shadow-lg p-4" style="width: 40rem; border-radius: 15px;">
+    <h2 class="text-center mb-4">Add A New Product</h2>
+    <form [formGroup]="productForm" (ngSubmit)="addProduct();productForm.reset()">
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name" class="form-label">Name of product</label>
+          <input type="text" id="name" class="form-control" formControlName="name" name="name" placeholder="Entrez le nom du produit">
+          @if (isFieldInvalid('name')) {
+            <div class="text-danger">The name is required!</div>
+          }
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="painter" class="form-label">Name of artist</label>
+          <input type="text" id="painter" class="form-control" formControlName="painter" name="painter" placeholder="Entrez le nom de l'artiste">
+          @if (isFieldInvalid('painter')) {
+            <div class="text-danger">The artist's name is required!</div>
+          }
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="photo" class="form-label">URL of photo</label>
+        <input type="text" id="photo" class="form-control" formControlName="photo"
+          placeholder="Entrez l'URL de la photo">
+          @if (isFieldInvalid('photo')) {
+            <div class="text-danger">The photo URL is required!</div>
+          }
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="photo" class="form-label">Date of the product</label>
+          <input type="date" id="photo" class="form-control" formControlName="dateCreate" placeholder="Date of the product">
+          @if (isFieldInvalid('dateCreate')) {
+           <div class="text-danger">The date is requiredand must be YYYY-MM-DD!</div>
+          }
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="category" class="form-label">Category</label>
+          <select id="category" class="form-select" formControlName="category">
+            @for(category of categories;track $index){
+            <option [value]="category">{{category}}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="photo" class="form-label">Description</label>
+        <input type="text" id="photo" class="form-control" formControlName="description" placeholder="Description">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="height" class="form-label">Height (cm)</label>
+          <input type="number" id="height" class="form-control" formControlName="height" placeholder="0">
+          @if (isFieldInvalid('height')) {
+            <div class="text-danger">Height must be between 60 and 500 cm!</div>
+          }
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="width" class="form-label">Width(cm)</label>
+          <input type="number" id="width" class="form-control" formControlName="width" placeholder="0">
+          @if (isFieldInvalid('width')) {
+            <div class="text-danger">Height must be between 60 and 500 cm!</div>
+          }
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="price" class="form-label">Price (€)</label>
+          <input type="number" id="price" class="form-control" formControlName="price" placeholder="0">
+          @if (isFieldInvalid('price')) {
+            <div class="text-danger">price is required and must be >0!</div>
+          }
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="discount" class="form-label">Discount (%)</label>
+          <input type="number" id="discount" class="form-control" formControlName="discount" placeholder="0">
+          @if (isFieldInvalid('discount')) {
+            <div class="text-danger">discount is required and must be between 0 and 100 !</div>
+          }
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input type="number" id="quantity" class="form-control" formControlName="quantity" placeholder="0">
+          @if (isFieldInvalid('quantity')) {
+            <div class="text-danger">quantity is required and must be >0 !</div>
+          }
+        </div>
+        <div class="form-check mt-2 col-md-6 mb-3">
+          <input type="checkbox" id="disponibility" class="form-check-input" formControlName="disponibility">
+          <label for="disponibility" class="form-check-label">Disponible</label>
+        </div>
+        </div>
+    </form><button  class="btn btn-success w-100" [disabled]="productForm.invalid" (click)="addProduct()">Add product</button>
+  </div>
+</div>

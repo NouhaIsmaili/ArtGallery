@@ -19,8 +19,6 @@ export class ArtTable {
         public comments: Comment[] = [],
         public category: Category,
         public description: string,
-        //ajout de state
-        public state:string='En cours',
         public discount : number,
         public nbLikes :number,
     ){}

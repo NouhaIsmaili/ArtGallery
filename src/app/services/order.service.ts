@@ -26,7 +26,7 @@ export class OrderService {
     return this.http.patch<Order>(URL+'/'+id, { state });
   }
 
-  deleteOrder(id: number): Observable<void> {
-    return this.http.delete<void>(URL+'/'+id);
-  }
+  // deleteOrder(id: number): Observable<void> {
+  //   return this.http.delete<void>(URL+'/'+id);
+  // }
 }
