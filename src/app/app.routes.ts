@@ -20,6 +20,8 @@ import { CreateProductComponent } from './components/userTasks/create-product/cr
 import { UpdateProductComponent } from './components/userTasks/update-product/update-product.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AboutUssComponent } from './components/about-uss/about-uss.component';
+import { PrivateLifeComponent } from './components/footer/aide&guide/private-life/private-life.component';
+import { ConditionsComponent } from './components/footer/aide&guide/conditions/conditions.component';
 
 
 export const routes: Routes = [        
@@ -36,6 +38,9 @@ export const routes: Routes = [
         {path: 'Raffin-Christian',title:"Raffin-Christian", component: RaffinChristianComponent},
         {path: 'Catrine-Alexandre',title:"Catrine-Alexandre", component: CatrineAlexandreComponent},
         {path: 'faq',title:"faq", component: FaqComponent},
+        {path: 'conditions',title:"conditions", component: ConditionsComponent},
+        {path: 'PrivateLife',title:"PrivateLife", component: PrivateLifeComponent},
+
         {path:'aboutUs',title:"aboutUs",component:AboutUssComponent},
         { path: '', redirectTo: 'home', pathMatch: 'full' },
        // { path: '**', title: 'Error', component: ErrorComponent }
