@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './category-prod-liste.component.css'
 })
 export class CategoryProdListeComponent implements OnInit {
- // @Input() category!: Category; 
   categ!:Category
   tabByCateg:ArtTable[]=[];
   private artTableService:ArtTableService=inject(ArtTableService)

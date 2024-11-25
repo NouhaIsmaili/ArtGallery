@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Category } from '../../edit-table/edit-table.component';
+import { Category } from '../../../model/category';
 import { ArtTable } from '../../../model/art-table';
 import { ArtTableService } from '../../../services/art-table.service';
 
