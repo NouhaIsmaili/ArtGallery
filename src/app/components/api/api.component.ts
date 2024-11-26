@@ -13,7 +13,9 @@ export class ApiComponent {
   http:HttpClient=inject(HttpClient)
   meme:any[]=[]
   
-async ngOnInit() {
+
+
+  async ngOnInit() {
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   const apiUrl = 'https://www.wikiart.org/en/App/Painting/PaintingsByArtist?artistUrl=fernand-leger&json=2';
   this.http.get(proxyUrl + apiUrl).subscribe(
