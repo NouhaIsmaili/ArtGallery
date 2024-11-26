@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { ArtTable } from '../../model/art-table';
 import { ArtTableService } from '../../services/art-table.service';
 import { ProductComponent } from '../product/product.component';
+import { ApiComponent } from '../api/api.component';
 
 export interface Tile {
   src: string;
@@ -14,7 +15,7 @@ export interface Tile {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, ProductComponent, MatGridListModule],
+  imports: [RouterLink, ProductComponent,ApiComponent, MatGridListModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

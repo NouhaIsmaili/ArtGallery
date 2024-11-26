@@ -3,7 +3,7 @@
     {
       "id": "1",
       "email": "gallery@gmail.com",
-      "pwd": "00112233"
+      "pwd": "33221100"
     }
   ],
   "order": [
@@ -42,7 +42,7 @@
       ],
       "total": 140,
       "orderDate": "2024-11-17T17:07:18.190Z",
-      "state": "In Progress"
+      "state": "completed"
     },
     {
       "id": "c06e",
@@ -177,6 +177,188 @@
       "total": 275,
       "orderDate": "2024-11-18T21:28:18.956Z",
       "state": "completed"
+    },
+    {
+      "id": "5c42",
+      "clientName": "Amel",
+      "clientPhoneNumber": 22658574,
+      "clientAdress": "sdfsfsf",
+      "ordredProducts": [
+        {
+          "article": {
+            "name": "La Cène",
+            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
+            "height": 65,
+            "width": 88,
+            "painter": "Leger Vincent",
+            "price": 90,
+            "quantity": 3,
+            "disponibility": true,
+            "dateCreate": "2024-11-06",
+            "comments": [
+              {
+                "author": "nada",
+                "date": "2024-11-24T20:30:15.365Z",
+                "message": "<3 <3"
+              },
+              {
+                "author": "Amel",
+                "date": "2024-11-25T08:28:07.568Z",
+                "message": "Tableau magnifique"
+              }
+            ],
+            "category": "figuratif",
+            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
+            "discount": 8,
+            "nbLikes": 18002,
+            "id": "42"
+          },
+          "qte": 1
+        },
+        {
+          "article": {
+            "name": "La Cène",
+            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
+            "height": 65,
+            "width": 88,
+            "painter": "Leger Vincent",
+            "price": 90,
+            "quantity": 2,
+            "disponibility": true,
+            "dateCreate": "2024-11-06",
+            "comments": [
+              {
+                "author": "nada",
+                "date": "2024-11-24T20:30:15.365Z",
+                "message": "<3 <3"
+              },
+              {
+                "author": "Amel",
+                "date": "2024-11-25T08:28:07.568Z",
+                "message": "Tableau magnifique"
+              }
+            ],
+            "category": "figuratif",
+            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
+            "discount": 8,
+            "nbLikes": 18002,
+            "id": "42"
+          },
+          "qte": 2
+        }
+      ],
+      "total": 248.39999999999998,
+      "orderDate": "2024-11-25T08:30:23.356Z",
+      "state": "completed"
+    },
+    {
+      "id": "a22d",
+      "clientName": "islem",
+      "clientPhoneNumber": 22222222,
+      "clientAdress": "oololkil",
+      "ordredProducts": [
+        {
+          "article": {
+            "name": "La Cène",
+            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
+            "height": 65,
+            "width": 88,
+            "painter": "Leger Vincent",
+            "price": 90,
+            "quantity": 3,
+            "disponibility": true,
+            "dateCreate": "2024-11-06",
+            "comments": [
+              {
+                "author": "nada",
+                "date": "2024-11-24T20:30:15.365Z",
+                "message": "<3 <3"
+              },
+              {
+                "author": "Amel",
+                "date": "2024-11-25T08:28:07.568Z",
+                "message": "Tableau magnifique"
+              }
+            ],
+            "category": "figuratif",
+            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
+            "discount": 8,
+            "nbLikes": 18002,
+            "id": "42"
+          },
+          "qte": 1
+        },
+        {
+          "article": {
+            "name": "La Cène",
+            "photo": "figuratif/Leger-Vincent/imgL2.jpg",
+            "height": 65,
+            "width": 88,
+            "painter": "Leger Vincent",
+            "price": 90,
+            "quantity": 2,
+            "disponibility": true,
+            "dateCreate": "2024-11-06",
+            "comments": [
+              {
+                "author": "nada",
+                "date": "2024-11-24T20:30:15.365Z",
+                "message": "<3 <3"
+              },
+              {
+                "author": "Amel",
+                "date": "2024-11-25T08:28:07.568Z",
+                "message": "Tableau magnifique"
+              }
+            ],
+            "category": "figuratif",
+            "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
+            "discount": 8,
+            "nbLikes": 18002,
+            "id": "42"
+          },
+          "qte": 2
+        },
+        {
+          "article": {
+            "name": "Les Deux Fridas ",
+            "photo": "abstrait/Baroni-Victor/imgB1.jpg",
+            "height": 173,
+            "width": 173,
+            "painter": "Baroni Victor",
+            "price": 100,
+            "quantity": 25,
+            "disponibility": true,
+            "dateCreate": "2024-11-05",
+            "comments": [
+              {
+                "author": "nouha",
+                "date": "2024-11-14T19:18:56.556Z",
+                "message": "amazing"
+              },
+              {
+                "author": "Azza",
+                "date": "2024-11-23T10:11:35.102Z",
+                "message": "trop beau"
+              },
+              {
+                "author": "nouha",
+                "date": "2024-11-25T08:59:23.956Z",
+                "message": "amaizing"
+              }
+            ],
+            "category": "Abstrait",
+            "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
+            "discount": 30,
+            "nbLikes": 303,
+            "id": "11"
+          },
+          "qte": 3
+        }
+      ],
+      "total": 458.4,
+      "orderDate": "2024-11-25T08:59:53.670Z",
+      "state": "completed"
     }
   ],
   "artWork": [
@@ -187,7 +369,7 @@
       "width": 173,
       "painter": "Baroni Victor",
       "price": 100,
-      "quantity": 25,
+      "quantity": 22,
       "disponibility": true,
       "dateCreate": "2024-11-05",
       "comments": [
@@ -200,12 +382,17 @@
           "author": "Azza",
           "date": "2024-11-23T10:11:35.102Z",
           "message": "trop beau"
+        },
+        {
+          "author": "nouha",
+          "date": "2024-11-25T08:59:23.956Z",
+          "message": "amaizing"
         }
       ],
       "category": "Abstrait",
       "description": "Les Deux Fridas is a double self-portrait that illustrates the duality of Frida Kahlo's identity, depicting her two personas: one dressed in traditional Mexican attire and the other in a European-style dress. The painting symbolizes her emotional turmoil following her divorce from Diego Rivera.",
       "discount": 30,
-      "nbLikes": 302,
+      "nbLikes": 303,
       "id": "11"
     },
     {
@@ -222,7 +409,7 @@
       "category": "Abstrait",
       "description": "This self-portrait features Frida Kahlo adorned with a thorn necklace, symbolizing her pain and suffering. A lifeless hummingbird hangs from the necklace, while a monkey and a black cat accompany her, adding layers of meaning related to love, luck, and personal turmoil.",
       "discount": null,
-      "nbLikes": 350,
+      "nbLikes": 351,
       "id": "13"
     },
     {
@@ -269,15 +456,15 @@
       "nbLikes": 401
     },
     {
-      "name": "Le Suicide de Dorothy Hale (1939)",
+      "name": "Le Suicide ",
       "photo": "abstrait/Catrine-Alexandre/imgC2.jpg",
-      "height": 70,
-      "width": 70,
-      "painter": "Catrine-Alexandre",
-      "price": 800,
-      "quantity": 2,
-      "disponibility": true,
-      "dateCreate": "2024-11-12",
+      "height": 60,
+      "width": 450,
+      "painter": "Catrine-Alexander",
+      "price": 600,
+      "quantity": 3,
+      "disponibility": false,
+      "dateCreate": "2024-11-27",
       "comments": [
         {
           "author": "islem",
@@ -290,9 +477,9 @@
           "message": "I love this one!!"
         }
       ],
-      "category": "Abstrait",
+      "category": "Fauve",
       "description": "This painting depicts the tragic suicide of Dorothy Hale, illustrating her falling from a window while simultaneously lying on the bloody pavement below. The work serves as a poignant commentary on despair and the struggles faced by women, reflecting Kahlo's own emotional turmoil.",
-      "discount": 50,
+      "discount": 10,
       "nbLikes": 40,
       "id": "15"
     },
@@ -757,7 +944,7 @@
       "width": 88,
       "painter": "Leger Vincent",
       "price": 90,
-      "quantity": 3,
+      "quantity": 0,
       "disponibility": true,
       "dateCreate": "2024-11-06",
       "comments": [
@@ -765,12 +952,17 @@
           "author": "nada",
           "date": "2024-11-24T20:30:15.365Z",
           "message": "<3 <3"
+        },
+        {
+          "author": "Amel",
+          "date": "2024-11-25T08:28:07.568Z",
+          "message": "Tableau magnifique"
         }
       ],
       "category": "figuratif",
       "description": "The Last Supper depicts the moment Jesus announces that one of his disciples will betray him. This mural is celebrated for its composition and emotional depth.",
       "discount": 8,
-      "nbLikes": 18002,
+      "nbLikes": 18003,
       "id": "42"
     },
     {
@@ -1087,7 +1279,7 @@
       "width": 70,
       "painter": "Novarino Fabien",
       "price": 6000,
-      "quantity": 4,
+      "quantity": 3,
       "disponibility": true,
       "dateCreate": "2024-11-13",
       "comments": [
@@ -1111,7 +1303,7 @@
       "category": "pop_art",
       "description": "Neon colors bring iconic symbols to life in this dynamic piece.",
       "discount": 5,
-      "nbLikes": 18001,
+      "nbLikes": 18002,
       "id": "59"
     }
   ]

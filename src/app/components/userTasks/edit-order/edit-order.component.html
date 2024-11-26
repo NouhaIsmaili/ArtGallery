@@ -55,7 +55,7 @@
                     </span>
                 </td>
                 <td class="align-content-center align-items-center">
-                     <button  [ngClass]="{
+                     <button type="button" [ngClass]="{
                         ' btn btn-danger fs-4': tab.state === 'In Progress',
                         'btn btn-success fw-bold fs-4': tab.state !== 'complete'
                       }  " (click)="onStatus(tab)">
