@@ -1,7 +1,27 @@
-# ProjetAngular
+# 🎨 Art Gallery Web Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+A modern and responsive **Art Gallery web application** built with **Angular** and powered by a **JSON data source**.  
+This project showcases artworks dynamically with a clean UI and smooth user experience.
 
+---
+
+## 🌟 Features
+
+- 🖼️ Display artworks dynamically from a JSON file
+- 🔍 Browse by category, artist, or style
+- ❤️ Interactive and user-friendly design
+- 📱 Fully responsive layout (mobile, tablet & desktop)
+- ⚡ Fast and lightweight frontend architecture
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Angular, TypeScript, HTML, CSS  
+- **Data Source:** JSON  
+- **Tools:** VS Code, Git  
+
+---
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
